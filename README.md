@@ -1,47 +1,38 @@
-# Project
-
-> This repo has been populated by an initial template to help get you started. Please
-> make sure to update the content to build a great experience for community-building.
-
-As the maintainer of this project, please make a few updates:
-
-- Improving this README.MD file to provide a great experience
-- Updating SUPPORT.MD with content about this project's support experience
-- Understanding the security reporting process in SECURITY.MD
-- Remove this section from the README
-
 # Learning Path: Get started with Rust development
 
 This repo contains all of the development of Rust lang content for Learn. Once content is developed here, it will be moved over to the Learn repo.
 
-## Learn module outlines
+## Timeline
 
-### Create your first Rust program
-Status: planning
+| Item | Owner | Status | Deadline |
+|------|-------|--------|----------|
+| Propose content | @meaghanlewis | Planning | 10/15/2020 |
+| Get content into Learn and with the vendor | @shanama | Not Started | < DATE > |
+| Request art assets | @shanama | Not Started | < Date > |
+| Write Content | @meaghanlewis | Not Started | < Date > |
+| Review Content | < YOUR REVIEWER(S) NAME(S) > | < Date > | < DATE > |
+| Content to Aquent | < YOUR NAME > | Not Started | < DATE > |
+| Content Draft on Learn | Aquent | Not Started | < DATE > |
+| Sign off on Content on Learn | < YOUR NAME > | Not Started | < DATE > |
+| Publish Content | @shanama | Not Started | < DATE > |
+| Review Live Content | < YOUR NAME > | Not Started | < DATE > |
 
-### Data types
-Status: planning
+## Content Overview
 
-### Data structures
-Status: planning
+< Description of content here >
 
-### Managing pakages and crates
-Status: planning
-
-### Create a program
-Status: planning
-
-### Testing
-Status: planning
-
-### Error handling
-Status: planning
-
-### Deploying
-Status: planning
+| Type | Title | Description | Duration |
+|------|-------|-------------|----------|
+| Learning Path | Get started with Rust Development | Learn about and start coding with Rust | ~6 hours |
+| Module | Create your first Rust program | This module is awesome | 45 min |
+| Module | Data types | This module is awesome | 45 min |
+| Module | Data structures | This module is awesome | 45 min |
+| Module | Managing pakages and crates | This module is awesome | 15-45 min |
+| Module | Create a program | This module is awesome | 45 min |
+| Module | Testing | This module is awesome | 45 min |
+| Module | Deploying | This module is awesome | 45 min |
 
 ## Contributing
-Status: planning
 
 This project welcomes contributions and suggestions.  Most contributions require you to agree to a
 Contributor License Agreement (CLA) declaring that you have the right to, and actually do, grant us

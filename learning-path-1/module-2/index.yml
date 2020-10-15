@@ -1,0 +1,32 @@
+### YamlMime:Module
+uid: ""
+metadata:
+  title: # Add your desired module title. All titles must be sentence-case.
+  description: # Add a short description for your module for search engines.
+  ms.date: 
+  author: # Your GitHub username (or whomever you'd like to give author attribution to)
+  ms.author: shanama # Leave this as shanama unless you want content bugs assigned directly to you
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: # Your desired module title. Same as above.
+summary: # Add a short description for your module to be displayed to users. Can be the same as above.
+abstract:  |
+  In this module, you will:
+# - Learning objective 1
+# - Learning objective 2
+# - etc.
+prerequisites: | # Fill in a detailed list of prerequisites in this form
+#  - prereq 1
+#  - prereq 2
+iconUrl: /learn/achievements/generic-badge.svg # TODO change
+levels:
+- beginner
+roles:
+# - Add relevant user role(s) (developer, data scientist, etc.)
+- student
+products:
+- ""
+units:
+- ""
+badge:
+  uid: ""
