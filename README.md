@@ -17,15 +17,31 @@ This repo contains all of the development of Rust lang content for Learn. Once c
 ## Learn module outlines
 
 ### Create your first Rust program
+Status: planning
+
 ### Data types
+Status: planning
+
 ### Data structures
+Status: planning
+
 ### Managing pakages and crates
+Status: planning
+
 ### Create a program
+Status: planning
+
 ### Testing
+Status: planning
+
 ### Error handling
+Status: planning
+
 ### Deploying
+Status: planning
 
 ## Contributing
+Status: planning
 
 This project welcomes contributions and suggestions.  Most contributions require you to agree to a
 Contributor License Agreement (CLA) declaring that you have the right to, and actually do, grant us
