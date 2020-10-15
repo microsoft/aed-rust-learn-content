@@ -10,6 +10,21 @@ As the maintainer of this project, please make a few updates:
 - Understanding the security reporting process in SECURITY.MD
 - Remove this section from the README
 
+# Learning Path: Get started with Rust development
+
+This repo contains all of the development of Rust lang content for Learn. Once content is developed here, it will be moved over to the Learn repo.
+
+## Learn module outlines
+
+### Create your first Rust program
+### Data types
+### Data structures
+### Managing pakages and crates
+### Create a program
+### Testing
+### Error handling
+### Deploying
+
 ## Contributing
 
 This project welcomes contributions and suggestions.  Most contributions require you to agree to a
