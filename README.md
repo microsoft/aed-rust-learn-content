@@ -1,4 +1,4 @@
-# Learning Path: Get started with Rust development
+# Learning Path: Take your first steps with Rust development
 
 This repo contains all of the development of Rust lang content for Learn. Once content is developed here, it will be moved over to the Learn repo.
 
@@ -23,11 +23,11 @@ This repo contains all of the development of Rust lang content for Learn. Once c
 
 | Type | Title | Description | Duration |
 |------|-------|-------------|----------|
-| Learning Path | Get started with Rust Development | Learn about and start coding with Rust | ~6 hours |
+| Learning Path | Take your first steps with Rust Development | Learn about and start coding with Rust | ~6 hours |
 | Module | Create your first Rust program | This module is awesome | 45 min |
 | Module | Data types | This module is awesome | 45 min |
 | Module | Data structures | This module is awesome | 45 min |
-| Module | Managing pakages and crates | This module is awesome | 15-45 min |
+| Module | Managing packages and crates | This module is awesome | 15-45 min |
 | Module | Create a program | This module is awesome | 45 min |
 | Module | Testing | This module is awesome | 45 min |
 | Module | Deploying | This module is awesome | 45 min |
