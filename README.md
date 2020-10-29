@@ -25,12 +25,13 @@ This repo contains all of the development of Rust lang content for Learn. Once c
 |------|-------|-------------|----------|
 | Learning Path | Take your first steps with Rust Development | Learn about and start coding with Rust | ~6 hours |
 | Module | Create your first Rust program | This module is awesome | 45 min |
-| Module | Data types | This module is awesome | 45 min |
-| Module | Data structures | This module is awesome | 45 min |
+| Module | Store and retrieve data in Rust | This module is awesome | 45 min |
+| Module | Using structs, enums, and pattern matching | This module is awesome | 45 min |
+| Module | Using control flow with if and loops | This module is awesome | 45 min |
+| Module | Understanding ownership and references | This module is awesome | 45 min |
 | Module | Managing packages and crates | This module is awesome | 15-45 min |
-| Module | Create a program | This module is awesome | 45 min |
-| Module | Testing | This module is awesome | 45 min |
-| Module | Deploying | This module is awesome | 45 min |
+| Module | Writing automated tests | This module is awesome | 45 min |
+| Module | Building a command line app |  This module is awesome | 45 min |
 
 ## Contributing
 
