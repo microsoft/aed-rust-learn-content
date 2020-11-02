@@ -1,14 +1,14 @@
 ### YamlMime:Module
 uid: ""
 metadata:
-  title: # Add your desired module title. All titles must be sentence-case.
+  title: Get started with Rust
   description: # Add a short description for your module for search engines.
   ms.date: 
-  author: # Your GitHub username (or whomever you'd like to give author attribution to)
-  ms.author: shanama # Leave this as shanama unless you want content bugs assigned directly to you
+  author: meaghanlewis
+  ms.author: shanama
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: # Your desired module title. Same as above.
+title: Get started with Rust
 summary: # Add a short description for your module to be displayed to users. Can be the same as above.
 abstract:  |
   In this module, you will:

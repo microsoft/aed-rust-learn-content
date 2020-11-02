@@ -2,10 +2,10 @@
 uid: 
 metadata:
   title: Introduction
-  description: Introduction
+  description: Introduction to this module and how to get started with programming Rust.
   ms.date: 
-  author: # Your GitHub username (or whomever you'd like to give author attribution to)
-  ms.author: shanama # Leave this as shanama unless you want content bugs assigned directly to you
+  author: meaghanlewis
+  ms.author: shanama
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Introduction

@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: 
+metadata:
+  title: What is Cargo
+  description: Learn about Cargo, the build system and package manager for Rust.
+  ms.date: 
+  author: meaghanlewis
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Summary
+durationInMinutes:
+content: |
+  [!include[](includes/4-what-is-cargo.md)]

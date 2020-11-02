@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: 
+metadata:
+  title: Exercise: Hello Cargo
+  description: Write your first program using Cargo.
+  ms.date: 
+  author: meaghanlewis
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Summary
+durationInMinutes:
+content: |
+  [!include[](includes/5-hello-cargo.md)]
