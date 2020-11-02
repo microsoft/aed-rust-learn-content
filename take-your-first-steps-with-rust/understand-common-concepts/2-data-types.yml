@@ -1,17 +1,17 @@
 ### YamlMime:ModuleUnit
 uid: 
 metadata:
-  title: 
+  title: Learn about data types
   description: 
   ms.date: 
-  author: # Your GitHub username (or whomever you'd like to give author attribution to)
-  ms.author: shanama # Leave this as shanama unless you want content bugs assigned directly to you
+  author: meaghanlewis
+  ms.author: shanama
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: 
+title: Learn about data types
 durationInMinutes:
 content: |
-  [!include[](includes/2-unit.md)]
+  [!include[](includes/2-data-types.md)]
 quiz:
   title: Check your knowledge
   questions:

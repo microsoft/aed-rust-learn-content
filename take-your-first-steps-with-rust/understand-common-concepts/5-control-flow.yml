@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: 
+metadata:
+  title: Iterate through code with control flow
+  description: 
+  ms.date: 
+  author: meaghanlewis
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Iterate through code with control flow
+durationInMinutes:
+content: |
+  [!include[](includes/5-control-flow.md)]
