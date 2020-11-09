@@ -3,15 +3,15 @@
 # Fill out all fields with comments
 uid: 
 metadata:
-  title: # Add your desired learning path title. All titles must be sentence-case.
-  description: # Add a short description of your learning path for search engines.
+  title: Take your first steps with Rust
+  description: Learn how to code using Rust.
   brand: 
   ms.date: 
-  author: # Your GitHub username (or whomever you'd like to give author attribution to)
-  ms.author: shanama # Leave this as shanama unless you want content bugs assigned directly to you
+  author: meaghanlewis
+  ms.author: shanama
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: # Your desired learning path title. Same as above.
+title: Take your first steps with Rust
 summary: | # Add a description for your learning path to be displayed to users in the given form. Can include the description from above.
   <Short description of your learning path> 
 
@@ -27,12 +27,18 @@ iconUrl: /learn/achievements/generic-trophy.svg # TODO change
 levels:
 - beginner
 roles:
-# - Add relevant user role(s) (developer, data scientist, etc.)
+- developer
 - student
 products:
 - 
 modules:
 - Get started with Rust
 - Understand common concepts
+- Learn about error handling
+- Understand ownership, borrowing, and lifetimes
+- Implement generic types and traits
+- Explore modules, packages, and third party crates
+- Write automated tests
+- Create a command line program
 trophy:
   uid: 
