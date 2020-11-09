@@ -1,4 +1,4 @@
-# 2. What is Rust?
+# What is Rust?
 
 Rust is an open source systems programming language that helps you write faster, more reliable
 software. Rust offers control over low-level details (such as memory usage) in combination with

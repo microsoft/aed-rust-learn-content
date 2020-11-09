@@ -1,4 +1,4 @@
-# 4. Exercise: Hello World
+# Exercise: Hello World
 
 Now that you’ve installed Rust, let’s write your first Rust program that prints the message "Helo,
 world!" to the console.

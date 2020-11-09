@@ -1,4 +1,4 @@
-# 3. Install Rust
+# Install Rust
 
 The recommended way to install Rust is to use `rustup`, the Rust Toolchain Installer. Go to
 <https://rustup.rs> to find the appropriate instructions for your operating system.

@@ -1,4 +1,4 @@
-# 7. Summary
+# Summary
 
 In this module, you learned:
 

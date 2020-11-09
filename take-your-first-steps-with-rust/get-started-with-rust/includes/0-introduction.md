@@ -1,4 +1,4 @@
-# 1. Introduction
+# Introduction
 
 The Rust programming language empowers you to build reliable and efficient software, like:
 

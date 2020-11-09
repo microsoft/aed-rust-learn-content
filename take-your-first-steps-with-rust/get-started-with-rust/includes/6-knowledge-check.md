@@ -1,4 +1,4 @@
-# 6. Knowledge check
+# Knowledge check
 
 How Rust code gets to be executed?
 

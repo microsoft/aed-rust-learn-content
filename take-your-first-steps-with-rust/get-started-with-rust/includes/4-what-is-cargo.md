@@ -1,4 +1,4 @@
-# 5. What is Cargo?
+# What is Cargo?
 
 Just compiling with `rustc` is fine for simple programs, but as your project grows, you’ll want to
 manage all the options and make it easy to share your code.
