@@ -17,7 +17,7 @@ For Linux, macOS, and PowerShell on Windows, enter this:
     $ mkdir hello_world
     $ cd hello_world
 
-For Windows CMD, enter this:
+For Windows Command Prompt, enter this:
 
     > mkdir "%USERPROFILE%\rust-learning-path"
     > cd /d "%USERPROFILE%\rust-learning-path"
@@ -25,7 +25,7 @@ For Windows CMD, enter this:
     > cd hello_world
 
 
-## Writing our first Rust code
+## Writing our first Rust program
 
 Next, create a new file named `main.rs` and use your editor to write the following code into it:
 

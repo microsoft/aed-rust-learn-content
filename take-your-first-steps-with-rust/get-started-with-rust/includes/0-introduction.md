@@ -40,4 +40,5 @@ In this module, you'll learn:
 
 ## Prerequisites
 
--   None
+- A Windows, Mac, or Linux computer
+- Knowledge of how to download programs from the internet

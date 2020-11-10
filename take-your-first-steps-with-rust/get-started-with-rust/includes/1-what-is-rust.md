@@ -12,7 +12,7 @@ without runtime overhead.
 In multi-threaded code, Rust catches data races at compile time, making concurrency much easier to
 use.
 
-Rust has been Stack Overflow's most loved language for four years in a row, indicating that many of
+According to [Stack Overflow's Developer Survey](https://insights.stackoverflow.com/survey), Rust has been the most loved language for four years in a row, indicating that many of
 those who have had the opportunity to use Rust have fallen in love with it.
 
 In short, Rust is the only language that ticks all the boxes:
