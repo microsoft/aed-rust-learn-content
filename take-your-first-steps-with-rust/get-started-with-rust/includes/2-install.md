@@ -5,6 +5,9 @@ Go to the website [rustup.rs](https://rustup.rs) to find the appropriate instruc
 
 :::image type="content" source="../media/rustup.png" alt-text="Image of rustup installer website.":::
 
+Copy the curl command by selecting the clipboard icon and then open up your computer's Terminal or
+Command Prompt to paste the command, then follow the onscreen instructions.
+
 Rust has a **6-week rapid release process** and supports a great number of platforms, so there are many
 builds of Rust available at any time. So, if you've installed `rustup` in the past, you can update
 your installation by running the command `rustup update`.
