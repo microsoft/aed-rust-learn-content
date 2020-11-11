@@ -3,6 +3,8 @@
 The recommended way to install Rust is to use `rustup`, the Rust Toolchain Installer. Go to
 Go to the website [rustup.rs](https://rustup.rs) to find the appropriate instructions for your operating system.
 
+:::image type="content" source="../media/rustup.png" alt-text="Image of rustup installer website.":::
+
 Rust has a **6-week rapid release process** and supports a great number of platforms, so there are many
 builds of Rust available at any time. So, if you've installed `rustup` in the past, you can update
 your installation by running the command `rustup update`.
