@@ -16,11 +16,17 @@ According to [Stack Overflow's Developer Survey](https://insights.stackoverflow.
 those who have had the opportunity to use Rust have fallen in love with it.
 
 In short, Rust is the only language that ticks all the boxes:
-- Type safe
-- Memory safe
-- Data race-free
-- Ahead-of-time compiled
-- Built on and encourages zero-cost abstractions
-- Minimal runtime (no garbage collection, no JIT compiler, no Virtual Machine)
-- Low memory footprint (programs run in resource constrained-environments like small microcontrollers)
-- Targets bare-metal (e.g. write an OS kernel or device driver; use Rust as a ‘high level assembler’)
+- **Type safe:** The compiler assures that no operation will be applied to a variable of a wrong
+  type.
+- **Memory safe:** Rust pointers _(known as references)_ always refer to valid memory.
+- **Data race-free:** Rust's Borrow Checker garantees thread-safety by ensuring that multiple parts
+  of a program can't mutate the same value at the same time.
+- **Zero Cost Abstractions:** Rust allows the use of high level concepts, like iteration, interfaces
+  and functional programming, without any performance costs, meaning the abstractions are just as
+  performant as if you had written the underlying code by hand.
+
+- **Minimal runtime:** Rust has a very minimal, no setup required runtime and has no garbage
+  collector in order to manage memmory efficiently.
+
+- **Targets bare-metal:** Rust shines at embedded and low-level programming, making it suitable to
+  write an OS kernel or device drivers.
