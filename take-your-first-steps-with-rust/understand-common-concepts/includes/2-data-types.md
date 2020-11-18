@@ -116,7 +116,9 @@ let heart_eyed_cat = '😻';
 ```
 
 The `str` type, also known as a **string literal**, is the most primitive string type, where the
-value of the string is hardcoded into the text of our program.
+value of the string is hardcoded into the text of our program. Most of the time we refer to those
+types in its referenced form using the form `&str`. We will cover references in the following
+modules but, for now, you can think of `&str` as a pointer to an immutable string literal.
 
 Although string literals are convenient to use in introductory Rust examples, they aren’t suitable
 for every situation in which we may want to use text, since not every string can be known at compile
