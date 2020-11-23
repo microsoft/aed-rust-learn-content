@@ -9,11 +9,27 @@ This repo contains all of the development of Rust lang content for Learn. Once c
 | Propose content | @meaghanlewis | Planning | 10/15/2020 |
 | Get content into Learn and with the vendor | @shanama | Not Started | < DATE > |
 | Request art assets | @shanama | Requested |11/19/2020 |
-| Write Content | @tilacog + @meaghanlewis | In progress | 11/6/2020 |
+| Write Content | @tilacog | In progress | 11/6/2020 |
+| Module 1 content | @tilacog + @meaghanlewis | Complete | 11/13/2020 |
+| Module 1 content to Aquent | @shanama | Not Started |  |
+| Module 2 content | @tilacog + @meaghanlewis | In progress | 11/16/2020 |
+| Module 2 content to Aquent | @shanama | Not Started |  |
+| Module 3 content | @tilacog + @meaghanlewis | Not started | < DATE > |
+| Module 3 content to Aquent | @shanama | Not Started |  |
+| Module 4 content | @tilacog + @meaghanlewis | Not started | < DATE > |
+| Module 4 content to Aquent | @shanama | Not Started |  |
+| Module 5 content | @tilacog + @meaghanlewis | Not started | < DATE > |
+| Module 5 content to Aquent | @shanama | Not Started |  |
+| Module 6 content | @tilacog + @meaghanlewis | Not started | < DATE > |
+| Module 6 content to Aquent | @shanama | Not Started |  |
+| Module 7 content | @tilacog + @meaghanlewis | Not started | < DATE > |
+| Module 7 content to Aquent | @shanama | Not Started |  |
+| Module 8 content | @tilacog + @meaghanlewis | Not started | < DATE > |
+| Module 8 content to Aquent | @shanama | Not Started |  |
+| Review Content | @meaghanlewis | Not Started | < DATE > |
 | Review Content | < YOUR REVIEWER(S) NAME(S) > | < Date > | < DATE > |
-| Content to Aquent | < YOUR NAME > | Not Started | < DATE > |
 | Content Draft on Learn | Aquent | Not Started | < DATE > |
-| Sign off on Content on Learn | < YOUR NAME > | Not Started | < DATE > |
+| Sign off on Content on Learn | @meaghanlewis | Not Started | < DATE > |
 | Publish Content | @shanama | Not Started | < DATE > |
 | Review Live Content | < YOUR NAME > | Not Started | < DATE > |
 
@@ -24,14 +40,14 @@ This repo contains all of the development of Rust lang content for Learn. Once c
 | Type | Title | Description | Duration |
 |------|-------|-------------|----------|
 | Learning Path | Take your first steps with Rust Development | Learn about and start coding with Rust | ~6 hours |
-| Module | Get started with Rust | This module is awesome | 45 min |
-| Module | Store and retrieve data in Rust | This module is awesome | 45 min |
-| Module | Using structs, enums, and pattern matching | This module is awesome | 45 min |
-| Module | Using control flow with if and loops | This module is awesome | 45 min |
-| Module | Understanding ownership and references | This module is awesome | 45 min |
-| Module | Managing packages and crates | This module is awesome | 15-45 min |
-| Module | Writing automated tests | This module is awesome | 45 min |
-| Module | Building a command line app |  This module is awesome | 45 min |
+| Module | Get started with Rust | Learn about the Rust programming language. | 45 min |
+| Module | Understand common programming concepts | Get familiar with concepts commonly used in Rust programs. | 45 min |
+| Module | Learn about error handling | Understand how to handle errors in Rust programs. | 45 min |
+| Module | Understand ownership, borrowing and lifetimes | Learn about these concepts which make Rust unique. | 45 min |
+| Module | Implement generic types and traits | Understand what generic types and traits are and how to use them in Rust. | 45 min |
+| Module | Explore modules, packages and third-party crates | Learn about how to effectively use modules and how to integrate with packages and third-party crates | 15-45 min |
+| Module | Write automated tests | Learn about the types of testing you can do with Rust. | 45 min |
+| Module | Create a command line program | Combine what you've learned to write and test a command line program. | 45 min |
 
 ## Contributing
 
