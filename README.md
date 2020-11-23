@@ -8,8 +8,8 @@ This repo contains all of the development of Rust lang content for Learn. Once c
 |------|-------|--------|----------|
 | Propose content | @meaghanlewis | Planning | 10/15/2020 |
 | Get content into Learn and with the vendor | @shanama | Not Started | < DATE > |
-| Request art assets | @shanama | Not Started | < Date > |
-| Write Content | @meaghanlewis | In progress | 11/6/2020 |
+| Request art assets | @shanama | Requested |11/19/2020 |
+| Write Content | @tilacog + @meaghanlewis | In progress | 11/6/2020 |
 | Review Content | < YOUR REVIEWER(S) NAME(S) > | < Date > | < DATE > |
 | Content to Aquent | < YOUR NAME > | Not Started | < DATE > |
 | Content Draft on Learn | Aquent | Not Started | < DATE > |
