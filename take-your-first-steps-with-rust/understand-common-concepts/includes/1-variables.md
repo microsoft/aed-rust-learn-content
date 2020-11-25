@@ -41,7 +41,7 @@ fn main() {
 }
 ```
 
-You can see this error message for yourself in the Rust Playground, following this [link](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=723a1c9bd36161c3cfc056f572ed9c11)
+You can see this error message for yourself in the [Rust Playground](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=723a1c9bd36161c3cfc056f572ed9c11).
 and clicking in the "Run" button.
 
 In order to mutate a value we must first use the `mut` keyword to make a variable binding mutable
