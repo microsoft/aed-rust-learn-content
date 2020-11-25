@@ -15,7 +15,8 @@ fn main() {
 `println` is a macro that takes a string as a first argument and one extra argument for each `{}`
 inside that string and replaces them for the argument's display value.
 
-*(We won't cover Rust macros in this module, but you can think of the `println` macro as a function
+> [!NOTE]
+> We won't cover Rust macros in this module, but you can think of the `println` macro as a function
 with a variable number of arguments, for now.)*
 
 The example above would print:
