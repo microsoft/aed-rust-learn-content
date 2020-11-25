@@ -75,7 +75,7 @@ loop {
 }
 ```
 
-Unlike the other kinds of loops in Rust, `loop` can be used as expressions that return values via
+Unlike the other kinds of loops in Rust like while and for, `loop` can be used in expressions that return values via
 `break`.
 
 ```rust
