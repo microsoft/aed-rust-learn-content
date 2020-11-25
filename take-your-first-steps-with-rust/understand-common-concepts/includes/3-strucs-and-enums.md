@@ -68,13 +68,13 @@ store different amounts and types of values.
 
 ```rust
 enum WebEvent {
-    // An `enum` may either be `unit-like`,
+    // An enum may either be unit-like,
     PageLoad,
     PageUnload,
     // like tuple structs,
     KeyPress(char),
     Paste(String),
-    // or c-like structures.
+    // or include tuple structs
     Click { x: i64, y: i64 },
 }
 ```

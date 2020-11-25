@@ -134,7 +134,7 @@ We get some compiler errors explaining that we have "mismatched types" in our fu
     5 |     dividend % divisor == 0
       |     ^^^^^^^^^^^^^^^^^^^^^^^ expected `char`, found `bool`
 
-This errors tells us that the expected type (`char`) did not match the received type (`bool`).
+This error tells us that the expected type (`char`) did not match the received type (`bool`).
 
 Indeed, each of the two return points inside our function received complaints from the compiler,
 telling us that it expected a `char` to be returned, but it found a `bool` instead.

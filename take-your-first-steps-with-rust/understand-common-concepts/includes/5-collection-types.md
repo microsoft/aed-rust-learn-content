@@ -58,7 +58,7 @@ With the folloing error message:
       |                                          ^^^^^^^^^^^ index out of bounds: the len is 7 but the index is 99
       |
 
-Since the array lenght is known at compile time, Rust makes impossible to build any program that
+Since the array length is known at compile time, Rust makes impossible to build any program that
 attempts to access an array out of its bounds.
 
 # Vectors
@@ -116,7 +116,7 @@ let v = vec![1, 2, 3, 4, 5];
 let does_not_exist = v[100];
 ```
 
-You can try to see this error in this [Rust Playground link](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=97a26b29e4839247c4228ec75bfe856c).
+You can run this code and see what happens in this [Rust Playground link](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=97a26b29e4839247c4228ec75bfe856c).
 
 Attempting to access the element at index 100 in a vector containing five elements aborts the
 running program with the following error message:
