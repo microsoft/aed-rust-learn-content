@@ -35,8 +35,8 @@ You can interact with the code above in this [Rust Playground link](https://play
 
 # Rust Built-in Data Types
 
-Rust comes with some built-in data types to express numbers, text and truthiness. They are the
-following:
+Rust comes with some built-in data types to express numbers, text and truthiness. We will cover each
+one of them in the following subtopics.
 
 ## Numbers
 
