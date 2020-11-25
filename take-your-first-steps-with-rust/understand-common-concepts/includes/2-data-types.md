@@ -10,7 +10,7 @@ what specific data type must be used. We can do this by using **type annotations
 For instance, suppose we are writing a program that needs to convert a string into a number and uses
 the `.parse()` method to do so.
 
-```Rust
+```rust
 let number: u32 = "42".parse().expect("Not a number!");
 ```
 
