@@ -21,7 +21,7 @@ if 1 == 2 {
 ```
 
 In the example above, the condition of our `if` is the expression: `1 == 2`, which evaluates into a
-boolean.
+boolean type with the value **false**.
 
 However, unlike in most languages, if blocks can also act as expressions so it's important to keep
 in mind that all branches must return the same type for our code to compile.
