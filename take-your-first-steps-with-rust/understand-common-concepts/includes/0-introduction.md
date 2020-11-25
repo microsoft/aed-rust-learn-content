@@ -27,7 +27,7 @@ your computer as well.
 In this module, you will:
 
 -   Use the `let` statement to assign values to variables.
--   How to comment your code in order to make it more descriptive.
+-   Learn how to comment your code in order to make it more descriptive.
 -   Discover the basic data types that exist in the Rust's standard library.
 -   Write your own functions.
 -   Use collections to store multiple values in a single structure.
