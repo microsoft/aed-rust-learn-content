@@ -17,7 +17,7 @@ inside that string and replaces them for the argument's display value.
 
 > [!NOTE]
 > We won't cover Rust macros in this module, but you can think of the `println` macro as a function
-with a variable number of arguments, for now.)*
+with a variable number of arguments, for now
 
 The example above would print:
 
