@@ -40,7 +40,7 @@ one of them in the following subtopics.
 
 ## Numbers
 
-Integers in Rust can be identified by byte-size and the signed property. Signed integers can
+Integers in Rust can be identified by bit-size and the signed property. Signed integers can
 represent positive and negative numbers, while unsigned integers can represent only positive
 numbers.
 
