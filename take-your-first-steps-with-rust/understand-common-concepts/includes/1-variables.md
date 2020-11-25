@@ -77,6 +77,6 @@ fn main() {
 }
 ```
 
-Can you guess the output?  Here is a
+Can you guess the output?
 [link](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=ddc9fa490b0602526e10b564fa93890a)
 to the Rust Playground so you can run this example and check the result.
