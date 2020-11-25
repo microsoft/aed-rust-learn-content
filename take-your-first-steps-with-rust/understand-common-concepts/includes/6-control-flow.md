@@ -109,7 +109,7 @@ let mut counter = 0;
 while counter < 10 {
     println!("hello");
     counter = counter + 1;
-}p
+}
 ```
 
 # Iterating with `for` loops
