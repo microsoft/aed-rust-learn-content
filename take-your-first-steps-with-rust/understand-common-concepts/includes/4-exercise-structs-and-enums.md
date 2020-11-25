@@ -52,3 +52,5 @@ fn main() {
 ```
 
 You can run this code in your local computer or use this [Rust Playground link](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=a6392731e066f804d30c3c56bc8bd7ae).
+
+The solution to this exercise is in this [Rust Playground link](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=2d69c0f7c5c2e478650ec43f5ee5e427).

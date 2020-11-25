@@ -39,3 +39,5 @@ fn indexing_array() {
 ```
 
 You can run this code in your local computer or use this [Rust Playground link](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=2feac2d3023de64774d9633f396bf24f).
+
+The solution to this exercise is in this [Rust Playground link](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=7932c6a7a48377dbe3278b83ecc982ba)o
