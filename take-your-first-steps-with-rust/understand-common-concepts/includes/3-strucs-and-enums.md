@@ -71,7 +71,7 @@ enum WebEvent {
     // An enum may either be unit-like,
     PageLoad,
     PageUnload,
-    // like tuple structs,
+    // An enum can include characters and strings
     KeyPress(char),
     Paste(String),
     // or include tuple structs
