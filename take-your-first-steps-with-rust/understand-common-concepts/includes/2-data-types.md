@@ -1,6 +1,6 @@
 # Learn about data types
 
-Rust Is a statically typed language, which means that the compiler must know exactly what are the
+Rust is a statically typed language, which means that the compiler must know exactly the
 data types for each variable in your code.
 
 In most cases, the compiler can infer the type of some value and you don't need to tell it
@@ -35,7 +35,7 @@ You can interact with the code above in this [Rust Playground link](https://play
 
 # Rust Built-in Data Types
 
-Rust comes with some built-ins data types to express numbers, text and truthiness. They are the
+Rust comes with some built-in data types to express numbers, text and truthiness. They are the
 following:
 
 ## Numbers
@@ -95,7 +95,7 @@ You can try running this example in the [Rust Playground](https://play.rust-lang
 ## Booleans
 
 Booleans in Rust are represented by the type `bool` and have two possible values: `true` or
-`false`. They are used widely in conditionals, such as `if=/=else` expressions and come up as a
+`false`. They are used widely in conditionals, such as `if` and `else` expressions and come up as a
 result of comparison checks.
 
 ```rust
@@ -122,7 +122,7 @@ modules but, for now, you can think of `&str` as a pointer to an immutable strin
 
 Although string literals are convenient to use in introductory Rust examples, they aren’t suitable
 for every situation in which we may want to use text, since not every string can be known at compile
-time *(like when a user interacts with our program and sends text to it via a terminal)*.
+time *(like when a user interacts with a program and sends text via a terminal)*.
 
 For these situations, Rust has a second string type, `String`. This type is allocated on the heap
 and as such is able to store an amount of text that is unknown to us at compile time. You can create
@@ -149,7 +149,7 @@ Here's a tuple of length 3:
 ("hello", 5_i32, 'c');
 ```
 
-This tuple has the type signature: `(&'static str, {integer}, char)`, were:
+This tuple has the type signature: `(&'static str, {integer}, char)`, where:
 
 -   `&'static str` is the type of the first element;
 -   `i32` is the type of the second element; and
