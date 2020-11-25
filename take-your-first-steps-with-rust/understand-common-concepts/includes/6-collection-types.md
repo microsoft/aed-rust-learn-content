@@ -70,24 +70,30 @@ Rust can't prevent you from accessing an invalid position in your vector.
 You can use the `vec!` macro to initialize a vector
 
 ```rust
-let mut three_numbers = vec![1, 2, 3];
+let three_numbers = vec![1, 2, 3];
 println!("Initial vector: {:?}", three_numbers);  // prints "[1, 2, 3]"
 
 // the vec! macro also accepts the same syntax as the array constructor
 let ten_zeroes = vec![0; 10];
-println!("Ten zeroes: {}", ten_zeroes); // prints [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+println!("Ten zeroes: {:?}", ten_zeroes); // prints [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 ```
+
+You might have noticed the `{:?}` format parameter inside the `println!` calls. It is used whenever
+we want to print something for *debugging* reasons whereas `{}` is used for *displaying* information
+to an end-user. Since we didn't tell Rust how to represent a vector of integers to end-users, using
+the former mark would result in a compilation error. We are going to learn precisely how to do that
+when we reach the *Traits* module in this course.
 
 Vectors can also be created using the `Vec::new()` method. You can push values onto the end of a
 vector (which will grow the vector as needed):
 
 ```rust
-  let mut v = Vec::new();  // creates an empty vector
-  v.push(5);
-  v.push(6);
+  let mut v = Vec::new();  // creates an empty vector,
+  v.push(5);               // pushes the number five into it...
+  v.push(6);               // ... an then six, and so on
   v.push(7);
   v.push(8);
-println!("{}", v); // prints [5, 6, 7, 8]
+println!("{:?}", v); // prints [5, 6, 7, 8]
 ```
 
 Popping values works in much the same way:
