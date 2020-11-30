@@ -52,7 +52,7 @@ fn main() {
 
 You can interact with the example above in this [Rust Playground Link](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=1ee492e41152dd39f7190cfceebc6897).
 
-# Enums
+## Enums
 
 Enums are types that can be any one of several variants.
 
@@ -80,10 +80,10 @@ enum WebEvent {
 ```
 
 This enum has four variants with different types:
--   `PageLoad` and `PageUnload` have no data associated with it at all.
--   `Keypress` includes a single character in it.
--   `Paste` includes a single String.
--   `Click` includes an anonymous struct inside it.
+- `PageLoad` and `PageUnload` have no data associated with it at all.
+- `Keypress` includes a single character in it.
+- `Paste` includes a single String.
+- `Click` includes an anonymous struct inside it.
 
 Defining an enum with variants such as the one above is similar to defining different kinds of
 struct definitions, except the enum doesn’t use the `struct` keyword and all the variants are
