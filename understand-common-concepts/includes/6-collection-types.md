@@ -136,7 +136,6 @@ Don't be scared by this behaviour. We are going to learn how to safely access a 
 without causing our program to panic, using the `Vector::get` method *(that never panics)* in the
 following module, when we learn about Error Handling in Rust.
 
-
 ## Hashmaps
 
 The last of our common collections is the hash map. The type `HashMap<K, V>` stores a mapping of

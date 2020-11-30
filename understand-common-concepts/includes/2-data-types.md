@@ -141,7 +141,7 @@ You can try running this example in the [Rust Playground](https://play.rust-lang
 
 ## Tuples
 
-A tuple is a grouping of values of different types collected into one compound They have fixed
+A tuple is a grouping of values of different types collected into one compound. They have fixed
 length, meaning that once they are declared, they cannot grow or shrink in size. The type of a tuple
 is defined by the sequence of each member's type.
 
