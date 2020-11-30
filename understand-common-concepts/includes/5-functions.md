@@ -1,4 +1,4 @@
-# Create Functions
+# Create reusable functionality with functions
 
 Functions are the primary way code is executed within Rust. You’ve already seen one of the most
 important functions in the language: the `main` function, which is the entry point of many programs.
@@ -36,7 +36,7 @@ divisible by another and returns a `boolean` to confirm that.
 fn is_divisible_by(dividend: u32, divisor: u32) -> bool {
     // If the divisor is zero, we want to return early with a `false` value
     if divisor == 0 {
-	return false;
+    return false;
     }
     dividend % divisor == 0
 }
@@ -44,11 +44,11 @@ fn is_divisible_by(dividend: u32, divisor: u32) -> bool {
 
 Lets take a look in this function signature:
 
--   `fn`: the function declaration keyword in Rust.
--   `is_divisible_by`: the function name.
--   `(dividend: u32, divisor: u32)`: this function's parameter list, and it states that two unsigned
+- `fn`: the function declaration keyword in Rust.
+- `is_divisible_by`: the function name.
+- `(dividend: u32, divisor: u32)`: this function's parameter list, and it states that two unsigned
     32-bit integers are expected as input values.
--   `-> bool`: the arrow points to the type of the value this function will always return.
+- `-> bool`: the arrow points to the type of the value this function will always return.
 
 So, the `is_divisible_by` function accepts two integers as inputs and will output a boolean value.
 
@@ -88,7 +88,7 @@ Lets see our function in action.
 ```rust
 fn is_divisible_by(dividend: u32, divisor: u32) -> bool {
     if divisor == 0 {
-	return false;
+    return false;
     }
     dividend % divisor == 0
 }
@@ -116,6 +116,7 @@ fn is_divisible_by(dividend: u32, divisor: u32) -> char {
 
 We get some compiler errors explaining that we have "mismatched types" in our function definition:
 
+```output
     error[E0308]: mismatched types
      --> src/main.rs:3:16
       |
@@ -133,6 +134,7 @@ We get some compiler errors explaining that we have "mismatched types" in our fu
     ...
     5 |     dividend % divisor == 0
       |     ^^^^^^^^^^^^^^^^^^^^^^^ expected `char`, found `bool`
+```
 
 This error tells us that the expected type (`char`) did not match the received type (`bool`).
 

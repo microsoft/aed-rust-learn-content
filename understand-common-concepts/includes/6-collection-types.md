@@ -13,9 +13,8 @@ In other words, arrays have a fixed length and every element of an array must be
 
 An array can be defined in two ways:
 
--   a comma-separated list inside square brackets, or
--   if you want to create an array that contains the same value for each element, you can specify
-    the initial value, followed by a semicolon, and then the length of the array in square brackets
+- a comma-separated list inside square brackets
+- the initial value, followed by a semicolon, and then the length of the array in square brackets
 
 ```rust
 fn main() {
@@ -51,12 +50,14 @@ println!("invalid array access: {}", letters[99]);  // our `letters` array have 
 
 With the folloing error message:
 
+```output
     error: this operation will panic at runtime
      --> src/main.rs:6:42
       |
     6 |     println!("invalid array access: {}", letters[99]);
       |                                          ^^^^^^^^^^^ index out of bounds: the len is 7 but the index is 99
       |
+```
 
 Since the array length is known at compile time, Rust makes impossible to build any program that
 attempts to access an array out of its bounds.
@@ -127,7 +128,9 @@ You can run this code and see what happens in this [Rust Playground link](https:
 Attempting to access the element at index 100 in a vector containing five elements aborts the
 running program with the following error message:
 
+```output
     thread 'main' panicked at 'index out of bounds: the len is 5 but the index is 100', src/main.rs:3:26
+```
 
 Don't be scared by this behaviour. We are going to learn how to safely access a vector element
 without causing our program to panic, using the `Vector::get` method *(that never panics)* in the
@@ -192,7 +195,7 @@ After we populated our hash map we can query it:
 ```rust
 if !book_reviews.contains_key("Les Misérables") {
     println!("We've got {} reviews, but Les Misérables ain't one.",
-	     book_reviews.len());
+    book_reviews.len());
 }
 ```
 

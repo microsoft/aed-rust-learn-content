@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: 
+metadata:
+  title: Exercise - Indexing
+  description: Use what you've learned about indexing with arrays and tuples to complete the code.
+  ms.date: 
+  author: meaghanlewis
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Exercise - Indexing
+durationInMinutes: 7
+content: |
+  [!include[](includes/7-exercise-indexing.md)]

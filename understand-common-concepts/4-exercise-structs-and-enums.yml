@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: 
+metadata:
+  title: Exercise - Fix the code with structs and enums
+  description: Use what you've learned to fix the problems in the code that contains structs and enums.
+  ms.date: 
+  author: meaghanlewis
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Exercise - Fix the code with structs and enums
+durationInMinutes: 7
+content: |
+  [!include[](includes/4-exercise-structs-and-enums.md)]

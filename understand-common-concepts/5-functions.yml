@@ -2,13 +2,13 @@
 uid: 
 metadata:
   title: Create reusable functionality with functions
-  description: 
+  description: Learn about how to implement and call functions.
   ms.date: 
   author: meaghanlewis
   ms.author: shanama
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Create reusable functionality with functions
-durationInMinutes:
+durationInMinutes: 6
 content: |
-  [!include[](includes/3-functions.md)]
+  [!include[](includes5-functions.md)]

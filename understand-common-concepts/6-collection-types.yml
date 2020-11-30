@@ -2,13 +2,13 @@
 uid: 
 metadata:
   title: Use collection types
-  description: 
+  description: Learn about the collection types - arrays, vectors, and hashmaps.
   ms.date: 
   author: meaghanlewis
   ms.author: shanama
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Use collection types
-durationInMinutes:
+durationInMinutes: 8
 content: |
-  [!include[](includes/4-collection-types.md)]
+  [!include[](includes/6-collection-types.md)]

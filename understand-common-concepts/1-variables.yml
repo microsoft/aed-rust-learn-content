@@ -2,13 +2,13 @@
 uid: 
 metadata:
   title: Create and use variables
-  description: 
+  description: Learn about how variables work in Rust, including how to declare them and how to use their properties.
   ms.date: 
   author: meaghanlewis
   ms.author: shanama
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Create and use variables
-durationInMinutes: 
+durationInMinutes: 4
 content: |
   [!include[](includes/1-variables.md)]

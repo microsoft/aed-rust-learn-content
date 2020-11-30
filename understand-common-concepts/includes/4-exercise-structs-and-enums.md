@@ -1,9 +1,9 @@
-In this unit your challenge is to fix the missing parts of each exercise's code to make them
+In this unit, your challenge is to fix the missing parts of each exercise's code to make them
 compile.
 
 You can use your local development environment or use the Rust Playground to edit the code.
 
-# Exercise 1: Structs and Enums
+# Exercise - Fix the code with structs and enums
 
 Lets build cars!
 

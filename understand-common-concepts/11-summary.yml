@@ -1,0 +1,61 @@
+### YamlMime:ModuleUnit
+uid: 
+metadata:
+  title: Summary
+  description: Summary
+  ms.date: 
+  author: meaghanlewis
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Summary
+durationInMinutes: 2
+content: |
+  [!include[](includes/11-summary.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "Which of the following statements is incorrect?"
+    choices:
+    - content: "In Rust, variables are immutable by default."
+      isCorrect: false
+      explanation: "Variables in Rust are mutable by default."
+    - content: "All integer types can be either positive or negative."
+      isCorrect: true
+      explanation: "Correct."
+    - content: "Tuples can contain elements of different types."
+      isCorrect: false
+      explanation: "Explanation3"
+    - content: "Arrays and Vectors can only hold values from a single type."
+      isCorrect: false
+      explanation: "Explanation4"
+  - content: "Which data structure would be the best fit for representing an address-book, that associates
+people's names to their phone numbers?"
+    choices:
+    - content: "A Tuple."
+      isCorrect: false
+      explanation: "Explanation1"
+    - content: "A Vector."
+      isCorrect: false
+      explanation: "Explanation2"
+    - content: "An Array."
+      isCorrect: false
+      explanation: "Explanation3"
+    - content: "A HashMap."
+      isCorrect: true
+      explanation: "Explanation4"
+  - content: "What would happen if you tried to directly access an element of a vector whose index was beyond that
+vector's boundaries?"
+    choices:
+    - content: "The program would panic in runtime."
+      isCorrect: true
+      explanation: "Explanation1"
+    - content: "A null value would be returned."
+      isCorrect: false
+      explanation: "Explanation2"
+    - content: "A compilation error."
+      isCorrect: false
+      explanation: "Explanation3"
+    - content: "The last element of this vector would be returned instead."
+      isCorrect: false
+      explanation: "Explanation4"

@@ -1,9 +1,9 @@
-In this unit your challenge is to fix the missing parts of each exercise's code to make them
+In this unit, your challenge is to fix the missing parts of each exercise's code to make them
 compile.
 
 You can use your local development environment or use the Rust Playground to edit the code.
 
-# Exercise 3: Hashmaps
+# Exercise - Hashmaps
 
 In this exercise you will need to define a basket of fruits in the form of a hash map, where the key
 represents the name of the fruit and the value represents how many of that particular fruit is in
@@ -31,12 +31,12 @@ fn fruit_basket() -> HashMap<String, u32> {
 fn main() {
     let basket = fruit_basket();
     assert!(
-	basket.len() >= 3,
-	"basket must have at least three types of fruits"
+    basket.len() >= 3,
+    "basket must have at least three types of fruits"
     );
     assert!(
-	basket.values().sum::<u32>() >= 5,
-	"basket must have at least five fruits"
+    basket.values().sum::<u32>() >= 5,
+    "basket must have at least five fruits"
     );
 }
 ```

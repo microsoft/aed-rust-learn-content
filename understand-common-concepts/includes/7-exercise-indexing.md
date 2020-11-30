@@ -1,9 +1,9 @@
-In this unit your challenge is to fix the missing parts of each exercise's code to make them
+In this unit, your challenge is to fix the missing parts of each exercise's code to make them
 compile.
 
 You can use your local development environment or use the Rust Playground to edit the code.
 
-# Exercise 2: Indexing
+# Exercise - Indexing
 
 In this exercise, modify the code for the two functions and use the index notation to access the
 required elements of the `numbers` tuple and the `letters` array.
@@ -19,9 +19,9 @@ fn indexing_tuple() {
     let second = ???;
 
     assert_eq!(
-	2, second,
-	"This is not the 2nd number in the tuple: {}",
-	second
+    2, second,
+    "This is not the 2nd number in the tuple: {}",
+    second
     )
 }
 
@@ -31,9 +31,9 @@ fn indexing_array() {
     let letter_d = ???;
 
     assert_eq!(
-	'd', letter_d,
-	"This is not the character for the letter d: {}",
-	letter_d
+    'd', letter_d,
+    "This is not the character for the letter d: {}",
+    letter_d
     )
 }
 ```

@@ -58,7 +58,9 @@ if number % 4 == 0 {
 
 This program has four possible paths it can take. After running it, you should see the following output:
 
+```output
     number is divisible by 3
+```
 
 If a condition expression evaluates to `true`, the consequent block is executed and any subsequent
 `else if` or `else` block is skipped. If a condition expression evaluates to `false`, the consequent
@@ -83,7 +85,7 @@ let mut i = 1;
 let something = loop {
     i *= 2;
     if i > 100 {
-	break i;
+    break i;
     }
 };
 assert_eq!(something, 128);

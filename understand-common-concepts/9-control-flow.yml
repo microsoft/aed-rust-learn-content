@@ -2,13 +2,13 @@
 uid: 
 metadata:
   title: Iterate through code with control flow
-  description: 
+  description: Learn about if/else expressions and loops
   ms.date: 
   author: meaghanlewis
   ms.author: shanama
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Iterate through code with control flow
-durationInMinutes:
+durationInMinutes: 7
 content: |
-  [!include[](includes/5-control-flow.md)]
+  [!include[](includes/9-control-flow.md)]

@@ -21,8 +21,9 @@ with a variable number of arguments, for now
 
 The example above would print:
 
-    the number is 10.
-    the boolean is true.
+> the number is 10.
+
+> the boolean is true.
 
 ## Mutability
 

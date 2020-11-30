@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: 
+metadata:
+  title: Learn about Structs and Enums
+  description: Learn about the data types, structs and enums, and how to use them.
+  ms.date: 
+  author: meaghanlewis
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Learn about Structs and Enums
+durationInMinutes: 4
+content: |
+  [!include[](includes/3-struct-and-enums.md)]

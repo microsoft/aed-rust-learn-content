@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: 
 metadata:
-  title: Learn about data types
-  description: Explore the primary data types available in Rust.
+  title: Exercise - Hashmaps
+  description: Use what you've learned about hashmaps to complete the code.
   ms.date: 
   author: meaghanlewis
   ms.author: shanama
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Learn about data types
+title: Exercise - Hashmaps
 durationInMinutes: 7
 content: |
-  [!include[](includes/2-data-types.md)]
+  [!include[](includes/8-exercise-hashmaps.md)]

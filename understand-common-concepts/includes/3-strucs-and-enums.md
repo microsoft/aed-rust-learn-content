@@ -1,4 +1,4 @@
-# Sructs and Enums
+# Learn about Structs and Enums
 
 A Struct is a type that is composed of other types. Like tuples, the pieces of a struct can be
 different types but you can name each piece of data so it’s clear what the values mean.
@@ -37,9 +37,9 @@ values for each of the fields.
 fn main() {
     // Instantiate a regular struct, with named fields. Order does not matter.
     let person = Person {
-	name: String::from("Adam"),
-	likes_oranges: true,
-	age: 25
+        name: String::from("Adam"),
+        likes_oranges: true,
+        age: 25
     };
 
     // Instantiate a tuple struct by passing the values in the same order as defined.
@@ -80,6 +80,7 @@ enum WebEvent {
 ```
 
 This enum has four variants with different types:
+
 - `PageLoad` and `PageUnload` have no data associated with it at all.
 - `Keypress` includes a single character in it.
 - `Paste` includes a single String.

@@ -25,11 +25,13 @@ let number = "42".parse().expect("Not a number!");
 
 The error:
 
+```output
     error[E0282]: type annotations needed
      --> src/main.rs:2:9
       |
     2 |     let number = "42".parse().expect("Not a number!");
       |         ^^^^^^ consider giving `number` a type
+```
 
 You can interact with the code above in this [Rust Playground link](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=7b8d18e97567f9603a0f8efea0369034).
 
