@@ -2,7 +2,7 @@
 
 Besides tuples, Rust has many other *compound types* that can group multiple values into one single type.
 
-# Arrays
+## Arrays
 
 An array is a collection of objects of the same type, stored sequentially in memory. Arrays are
 created using brackets `[]`, and their size, which is known at compile time, is part of their type
@@ -61,7 +61,7 @@ With the folloing error message:
 Since the array length is known at compile time, Rust makes impossible to build any program that
 attempts to access an array out of its bounds.
 
-# Vectors
+## Vectors
 
 Just like Arrays, Vectors allow you to store multiple values of the same type. But, unlike Arrays,
 they can grow or shrink at any time. This implies in their size not being known at compile time, so
@@ -134,7 +134,7 @@ without causing our program to panic, using the `Vector::get` method *(that neve
 following module, when we learn about Error Handling in Rust.
 
 
-# Hashmaps
+## Hashmaps
 
 The last of our common collections is the hash map. The type `HashMap<K, V>` stores a mapping of
 keys of type `K` to values of type `V`. Where vectors store values by an integer index, HashMaps
