@@ -24,7 +24,7 @@ The example above would print:
     the number is 10.
     the boolean is true.
 
-# Mutability
+## Mutability
 
 In Rust, variable bindings are immutable by default. When a variable is immutable, once a value is
 bound to a name, you can’t change that value.
@@ -58,7 +58,7 @@ fn main() {
 
 This code will compile without errors, since the variable `a_number` is now allowed to be mutated.
 
-# Shadowing
+## Shadowing
 
 You can also declare a new variable with the same name as a previous variable, creating a new
 binding. In Rust this operation is called "shadowing" since the new variable shadows the previous
