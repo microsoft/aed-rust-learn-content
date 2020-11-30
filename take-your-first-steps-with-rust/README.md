@@ -3,7 +3,8 @@
 Learning Path Title:  
 Take your first steps with Rust
 
-Module Titles:  
+Module Titles:
+
 - Get started with Rust
 - Understand common concepts
 - Learn about error handling
@@ -12,4 +13,3 @@ Module Titles:
 - Explore modules, packages, and third party crates
 - Write automated tests
 - Create a command line program
-

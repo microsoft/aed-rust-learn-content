@@ -12,17 +12,22 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Take your first steps with Rust
-summary: | # Add a description for your learning path to be displayed to users in the given form. Can include the description from above.
-  <Short description of your learning path> 
+summary: | 
+  Explore the fundamentals of programming with Rust.
 
   In this learning path you will:
-    - <learning objective 1>
-    - <learning objective 2>
-    - <learning objective 3>
+    - Install Rust
+    - Learn about common concepts like variables, data types, and functions
+    - Learn how to handle errors
+    - Understand ownership, borrowing, and lifetimes
+    - Implement generic types and traits
+    - Explore modules, packages, and third party crates
+    - Write automated tests for Rust programs
+    - Create a command line Rust program
 
-prerequisites: | # Fill in a detailed list of prerequisites in this form
-#  - prereq 1
-#  - prereq 2
+prerequisites: | 
+   - A Windows, Mac or Linux computer
+   - Knowledge of how to download programs from the internet
 iconUrl: /learn/achievements/generic-trophy.svg # TODO change
 levels:
 - beginner
