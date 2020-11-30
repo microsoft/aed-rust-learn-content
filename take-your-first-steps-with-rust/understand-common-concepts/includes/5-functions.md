@@ -27,7 +27,7 @@ defined somewhere.
 
 Lets try declaring a function that accepts parameters and returns a value.
 
-# Passing parameters to functions
+## Passing parameters to functions
 
 In the following example, we are going to declare a function that checks if a given number is
 divisible by another and returns a `boolean` to confirm that.
@@ -81,7 +81,7 @@ This expression uses the remainder operator (`%`) to get the remainder of the di
 two terms and compare it to zero. The resulting type after applying the equality operator (`==`) is
 the `bool` type, either `true` or `false`.
 
-# Calling a function
+## Calling a function
 
 Lets see our function in action.
 
