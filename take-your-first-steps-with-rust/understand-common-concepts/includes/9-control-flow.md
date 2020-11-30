@@ -3,7 +3,7 @@
 An essential part of any programming languages are ways to modify control flow. In this unit we are
 going to learn how to control our code to run only under certain conditions.
 
-# `if/else` expressions
+## `if/else` expressions
 
 We can create conditional branches in the execution of our code using the `if` and `else` keywords,
 much similar to what other languages do.
@@ -65,7 +65,7 @@ If a condition expression evaluates to `true`, the consequent block is executed 
 block is skipped and any subsequent `else if` condition is evaluated. If all `if` and `else if`
 conditions evaluate to `false` then any `else` block is executed.
 
-# Looping forever with `loop`
+## Looping forever with `loop`
 
 A `loop` expression denotes an infinite loop. It repeats execution of its body continuously:
 
@@ -92,7 +92,7 @@ assert_eq!(something, 128);
 Every `break` a loop has to have the same type. When it's not explicitly giving something, `break;`
 returns `()` *(an empty tuple)*.
 
-# Looping until a criteria is met with `while` loops
+## Looping until a criteria is met with `while` loops
 
 A `while` expression loops until a predicate is false.
 
@@ -112,7 +112,7 @@ while counter < 10 {
 }
 ```
 
-# Iterating with `for` loops
+## Iterating with `for` loops
 
 A `for` expression extracts values from an iterator, looping until the iterator is empty.
 
