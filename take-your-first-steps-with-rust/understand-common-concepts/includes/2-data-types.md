@@ -33,7 +33,7 @@ The error:
 
 You can interact with the code above in this [Rust Playground link](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=7b8d18e97567f9603a0f8efea0369034).
 
-# Rust Built-in Data Types
+## Rust Built-in Data Types
 
 Rust comes with some built-in data types to express numbers, text and truthiness. We will cover each
 one of them in the following subtopics.
@@ -151,9 +151,9 @@ Here's a tuple of length 3:
 
 This tuple has the type signature: `(&'static str, {integer}, char)`, where:
 
--   `&'static str` is the type of the first element;
--   `i32` is the type of the second element; and
--   `char` is the type of the third element.
+- `&'static str` is the type of the first element;
+- `i32` is the type of the second element; and
+- `char` is the type of the third element.
 
 Tuples elements they can be accessed by position. This is called 'tuple indexing', and it looks
 like this:
