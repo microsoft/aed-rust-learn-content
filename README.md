@@ -11,11 +11,11 @@ This repo contains all of the development of Rust lang content for Learn. Once c
 | Request art assets | @shanama | Requested |11/19/2020 |
 | Write Content | @tilacog | In progress | 11/6/2020 |
 | Module 1 content | @tilacog + @meaghanlewis | Complete | 11/13/2020 |
-| Module 1 content to Aquent | @shanama | Not Started |  |
-| Module 2 content | @tilacog + @meaghanlewis | In progress | 11/16/2020 |
-| Module 2 content to Aquent | @shanama | Not Started |  |
+| Module 1 content to Aquent | @shanama | Complete | 11/24/2020 |
+| Module 2 content | @tilacog + @meaghanlewis | Complete | 11/16/2020 |
+| Module 2 content to Aquent | @shanama | Not Started | 12/1/2020 |
 | Module 3 content | @tilacog + @meaghanlewis | Not started | < DATE > |
-| Module 3 content to Aquent | @shanama | Not Started |  |
+| Module 3 content to Aquent | @shanama | Not Started | 12/8/2020 |
 | Module 4 content | @tilacog + @meaghanlewis | Not started | < DATE > |
 | Module 4 content to Aquent | @shanama | Not Started |  |
 | Module 5 content | @tilacog + @meaghanlewis | Not started | < DATE > |
