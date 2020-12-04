@@ -8,16 +8,15 @@ This repo contains all of the development of Rust lang content for Learn. Once c
 |------|-------|--------|----------|
 | Propose content | @meaghanlewis | Planning | 10/15/2020 |
 | Request art assets | @shanama | Requested |11/19/2020 |
-| Write Content | @tilacog | In progress | 11/6/2020 |
 | Module 1 content | @tilacog + @meaghanlewis | Complete | 11/13/2020 |
 | Module 1 content to Aquent | @shanama | Complete | 11/24/2020 |
 | Module 2 content | @tilacog + @meaghanlewis | Complete | 11/16/2020 |
 | Module 2 content to Aquent | @shanama | Complete | 12/1/2020 |
-| Module 3 content | @tilacog + @meaghanlewis | In progress | 11/23/2020 |
+| Module 3 content | @tilacog + @meaghanlewis | In progress | 12/4/2020 |
 | Module 3 content to Aquent | @shanama | Not Started | 12/8/2020 |
-| Module 4 content | @tilacog + @meaghanlewis | In progress | 11/30/2020 |
+| Module 4 content | @tilacog + @meaghanlewis | In progress | 12/11/2020 |
 | Module 4 content to Aquent | @shanama | Not Started | 12/15/2020 |
-| Module 5 content | @tilacog + @meaghanlewis | Not started | 12/7/2020 |
+| Module 5 content | @tilacog + @meaghanlewis | Not started | 12/18/2020 |
 | Module 5 content to Aquent | @shanama | Not Started | 1/5/2021 |
 | Module 6 content | @tilacog + @meaghanlewis | Not started | < DATE > |
 | Module 6 content to Aquent | @shanama | Not Started | 1/12/2021 |
