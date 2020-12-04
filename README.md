@@ -18,11 +18,11 @@ This repo contains all of the development of Rust lang content for Learn. Once c
 | Module 4 content to Aquent | @shanama | Not Started | 12/15/2020 |
 | Module 5 content | @tilacog + @meaghanlewis | Not started | 12/18/2020 |
 | Module 5 content to Aquent | @shanama | Not Started | 1/5/2021 |
-| Module 6 content | @tilacog + @meaghanlewis | Not started | 12/25/2020 |
+| Module 6 content | @tilacog + @meaghanlewis | Not started | 12/31/2020 |
 | Module 6 content to Aquent | @shanama | Not Started | 1/12/2021 |
-| Module 7 content | @tilacog + @meaghanlewis | Not started | 12/31/2020 |
+| Module 7 content | @tilacog + @meaghanlewis | Not started | 1/7/2021  |
 | Module 7 content to Aquent | @shanama | Not Started | 1/19/2021 |
-| Module 8 content | @tilacog + @meaghanlewis | Not started | 1/7/2021 |
+| Module 8 content | @tilacog + @meaghanlewis | Not started |1/14/2021  |
 | Module 8 content to Aquent | @shanama | Not Started | 1/26/2021 |
 | Review Content | @meaghanlewis | Not Started | < DATE > |
 | Review Content | < YOUR REVIEWER(S) NAME(S) > | < Date > | < DATE > |
