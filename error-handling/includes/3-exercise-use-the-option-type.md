@@ -50,4 +50,7 @@ fn main() {
 ```
 
 Run the code above and check if all the `assert_eq!` expressions passes without panicking. You can
-also edit this in this [Rust Playground link](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=bfc7568619b261d18e272bf09bad48c0).
+also edit this at this [Rust Playground link](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=bfc7568619b261d18e272bf09bad48c0).
+
+
+The sollution to this exercise can be found [here](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=bfc7568619b261d18e272bf09bad48c0).
