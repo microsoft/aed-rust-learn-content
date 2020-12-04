@@ -7,25 +7,24 @@ This repo contains all of the development of Rust lang content for Learn. Once c
 | Item | Owner | Status | Deadline |
 |------|-------|--------|----------|
 | Propose content | @meaghanlewis | Planning | 10/15/2020 |
-| Get content into Learn and with the vendor | @shanama | Not Started | < DATE > |
 | Request art assets | @shanama | Requested |11/19/2020 |
 | Write Content | @tilacog | In progress | 11/6/2020 |
 | Module 1 content | @tilacog + @meaghanlewis | Complete | 11/13/2020 |
 | Module 1 content to Aquent | @shanama | Complete | 11/24/2020 |
 | Module 2 content | @tilacog + @meaghanlewis | Complete | 11/16/2020 |
-| Module 2 content to Aquent | @shanama | Not Started | 12/1/2020 |
-| Module 3 content | @tilacog + @meaghanlewis | Not started | < DATE > |
+| Module 2 content to Aquent | @shanama | Complete | 12/1/2020 |
+| Module 3 content | @tilacog + @meaghanlewis | In progress | 11/23/2020 |
 | Module 3 content to Aquent | @shanama | Not Started | 12/8/2020 |
-| Module 4 content | @tilacog + @meaghanlewis | Not started | < DATE > |
-| Module 4 content to Aquent | @shanama | Not Started |  |
-| Module 5 content | @tilacog + @meaghanlewis | Not started | < DATE > |
-| Module 5 content to Aquent | @shanama | Not Started |  |
+| Module 4 content | @tilacog + @meaghanlewis | In progress | 11/30/2020 |
+| Module 4 content to Aquent | @shanama | Not Started | 12/15/2020 |
+| Module 5 content | @tilacog + @meaghanlewis | Not started | 12/7/2020 |
+| Module 5 content to Aquent | @shanama | Not Started | 1/5/2021 |
 | Module 6 content | @tilacog + @meaghanlewis | Not started | < DATE > |
-| Module 6 content to Aquent | @shanama | Not Started |  |
+| Module 6 content to Aquent | @shanama | Not Started | 1/12/2021 |
 | Module 7 content | @tilacog + @meaghanlewis | Not started | < DATE > |
-| Module 7 content to Aquent | @shanama | Not Started |  |
+| Module 7 content to Aquent | @shanama | Not Started | 1/19/2021 |
 | Module 8 content | @tilacog + @meaghanlewis | Not started | < DATE > |
-| Module 8 content to Aquent | @shanama | Not Started |  |
+| Module 8 content to Aquent | @shanama | Not Started | 1/26/2021 |
 | Review Content | @meaghanlewis | Not Started | < DATE > |
 | Review Content | < YOUR REVIEWER(S) NAME(S) > | < Date > | < DATE > |
 | Content Draft on Learn | Aquent | Not Started | < DATE > |
