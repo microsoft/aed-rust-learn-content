@@ -1,11 +1,8 @@
-# Exercise: Use the Option type
+# Exercise - Use the Option type
 
-In this exercise, you are going to finish implementing a funtion that receives a `Person` struct and
-returns a `String` with its full name. Keep in mind that some of those people doesn't have a middle
-name, but, if they do, it must be included in the return value.
+In this exercise, you are going to finish implementing a function that receives a `Person` struct and returns a `String` with its full name. Keep in mind that some of those people doesn't have a middle name, but, if they do, it must be included in the return value.
 
-You must edit only the `build_full_name` function. Note that the part that handles the first and the
-last name have already been implemented for you.
+You must edit only the `build_full_name` function. Note that the part that handles the first and the last name have already been implemented for you.
 
 ```rust
 struct Person {
@@ -27,30 +24,28 @@ fn build_full_name(person: &Person) -> String {
 
 fn main() {
     let john = Person {
-	first: String::from("James"),
-	middle: Some(String::from("Oliver")),
-	last: String::from("Smith"),
+    first: String::from("James"),
+    middle: Some(String::from("Oliver")),
+    last: String::from("Smith"),
     };
     assert_eq!(build_full_name(&john), "James Oliver Smith");
 
     let alice = Person {
-	first: String::from("Alice"),
-	middle: None,
-	last: String::from("Stevens"),
+        first: String::from("Alice"),
+        middle: None,
+        last: String::from("Stevens"),
     };
     assert_eq!(build_full_name(&alice), "Alice Stevens");
 
     let bob = Person {
-	first: String::from("Robert"),
-	middle: Some(String::from("Murdock")),
-	last: String::from("Jones"),
+        first: String::from("Robert"),
+        middle: Some(String::from("Murdock")),
+        last: String::from("Jones"),
     };
     assert_eq!(build_full_name(&bob), "Robert Murdock Jones");
 }
 ```
 
-Run the code above and check if all the `assert_eq!` expressions passes without panicking. You can
-also edit this at this [Rust Playground link](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=bfc7568619b261d18e272bf09bad48c0).
+Run the code above and check if all the `assert_eq!` expressions passes without panicking. You can also edit this at this [Rust Playground link](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=bfc7568619b261d18e272bf09bad48c0).
 
-
-The sollution to this exercise can be found [here](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=bfc7568619b261d18e272bf09bad48c0).
+The solution to this exercise can be found [here](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=bfc7568619b261d18e272bf09bad48c0).

@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: 
+metadata:
+  title: Use the Option type for dealing with absence
+  description: Learn how to use the Option enum when the absence of a value is a possibility.
+  ms.date: 
+  author: meaghanlewis
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Use the Option type for dealing with absence
+durationInMinutes: 7
+content: |
+  [!include[](includes/2-use-the-option-type-for-dealing-with-absence.md)]

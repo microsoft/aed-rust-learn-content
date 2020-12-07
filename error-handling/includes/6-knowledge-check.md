@@ -1,6 +1,7 @@
 # Knowledge Check
 
 All of the following attempts would cause a Rust program to panic, except:
+
 - Access an out-of-bounds index of a Vector with `vector[index]` notation
   - Wrong. Directly accessing a vector element through index notation might cause a panic if the
     index is out of bounds.

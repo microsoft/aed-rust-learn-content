@@ -1,11 +1,10 @@
-# Use the Result type for handing errors
+# Use the Result type for handling errors
 
 Rust provides the `Result<T, E>` enum for returning and propagating errors. By convention, the
 `Ok(T)` variant represents a success and contains a value, while the variant `Err(E)` represents an
 error and contains an error value.
 
-It is prominently used for I/O operations, such as parsing strings into other types, attempts at
-aquiring network connections, file access and data validation.
+It is prominently used for I/O operations, such as parsing strings into other types, attempts at acquiring network connections, file access and data validation.
 
 It is defined as:
 
@@ -34,9 +33,9 @@ struct DivisionByZeroError;
 
 fn safe_division(dividend: f64, divisor: f64) -> Result<f64, DivisionByZeroError> {
     if divisor == 0.0 {
-	Err(DivisionByZeroError)
+        Err(DivisionByZeroError)
     } else {
-	Ok(dividend / divisor)
+        Ok(dividend / divisor)
     }
 }
 
@@ -52,9 +51,11 @@ You can check this program in the
 
 The output of this program will be:
 
+```output
     Ok(3.0)
     Err(DivisionByZeroError)
     Ok(0.0)
+```
 
 The `#[derive(Debug)]` part above the `DivisionByZeroError` struct is a macro that tells the Rust
 compiler to make our type printable for debugging purposes. We will cover this in depth when we

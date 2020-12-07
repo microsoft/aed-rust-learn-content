@@ -1,4 +1,5 @@
 # Learn about fatal errors with panic!
+
 Panicking is the simplest error handling mechanism in Rust.
 
 You can use the `panic!` macro to panic the current thread. It prints an error message, unwind and clean up the stack and exits the program.
@@ -13,7 +14,9 @@ fn main() {
 
 This program would exit with status code `101` and print the following message:
 
-    thread 'main' panicked at 'Farewell!', src/main.rs:2:5
+```output
+thread 'main' panicked at 'Farewell!', src/main.rs:2:5
+```
 
 The panic message reveals to us the place in our source code where the panic occurred: `src/main.rs:2:5` indicates that it’s the second line, fifth character of our `src/main.rs` file.
 

@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: 
+metadata:
+  title: Use the Result type for handling errors
+  description: Learn how to use the Result type enum to return and propagate errors.
+  ms.date: 
+  author: meaghanlewis
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Use the Result type for handling errors
+durationInMinutes: 4
+content: |
+  [!include[](includes/4-use-the-result-type-for-handing-errors.md)]

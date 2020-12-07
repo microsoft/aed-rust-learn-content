@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: 
+metadata:
+  title: Exercise - Use the Result type for handing errors
+  description: Use what you've learned about the Result type to handle errors that result in reading files from a computer.
+  ms.date: 
+  author: meaghanlewis
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Exercise - Use the Result type for handing errors
+durationInMinutes: 8
+content: |
+  [!include[](includes/5-exercise-use-the-result-type-for-handing-errors.md)]
