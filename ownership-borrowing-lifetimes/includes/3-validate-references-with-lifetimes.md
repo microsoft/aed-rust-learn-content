@@ -3,10 +3,10 @@
 Lifetimes are Rust’s answer to the question of memory safety. They allow Rust to ensure memory
 safety without the performance costs of garbage collection.
 
-The main aim of lifetimes is to prevent dangling references, which cause a program to reference data
+The main goal of lifetimes is to prevent dangling references, which cause a program to reference data
 other than the data it’s intended to reference.
 
-Consider the following snippet, which attempts to use a reference whose value has gone out of scope
+Consider the following snippet, which attempts to use a reference whose value has gone out of scope.
 
 ```rust
 fn main() {
@@ -37,7 +37,7 @@ This error occurs because a value was dropped while it was still borrowed. In th
 dropped at the end of the inner scope, but it is borrowed by `x` until the `println` call. Since `x`
 is still valid for the outer scope *(because its scope is larger)* we say that it “lives longer”.
 
-Here is the same code snippet with drawings arround each variable lifetimes. We gave each lifetime a
+Here is the same code snippet with drawings arround each variable lifetime. We gave each lifetime a
 name:
 
 - `'a` is the lifetime annotation for our value `x`
@@ -65,7 +65,7 @@ because the subject of the reference *(`y` at lifetime `'b`)* doesn’t live as 
 
 ## Annotating Lifetimes in Functions
 
-Just as for types, lifetimes are implicit and inferred by the Rust compiler most of the time.
+Just as with types, lifetimes are implicit and inferred by the Rust compiler most of the time.
 
 When multiple lifetimes are possible, we must annotate them to help the compiler understand which
 lifetime he will consider to ensure the actual references used at runtime will definitely be valid.
@@ -108,16 +108,16 @@ The code above fails to compile with a very informative error message:
 The help text says Rust can’t tell whether the reference being returned refers to `x` or `y`
 *(neither do we)*, so the return type needs to be annotated with a generic lifetime parameter.
 
-The lifetimes might be different each time the function is called, so we don't know the concrete
-lifetimes of the references that will be passed to our `longest_word` function, we can’t determine
+The lifetimes might be different each time the function is called. So we don't know the concrete
+lifetimes of the references that will be passed to our `longest_word` function, and we can’t determine
 if the reference that will be returned will always be a valid one.
 
 Also, the borrow checker can’t determine this either, because it doesn’t know how the lifetimes of
 the input parameters relate to the lifetime of the return value. This is why we need to annotate the
-lifetimes manually
+lifetimes manually.
 
-Hopefully, the compiler gave us a hint on how to fix this error.We can add generic lifetime
-parameters to our function signature th define the relationship between the references so the borrow
+Luckily, the compiler gave us a hint on how to fix this error. We can add generic lifetime
+parameters to our function signature that define the relationship between the references so the borrow
 checker can perform its analysis:
 
 ```rust
@@ -134,7 +134,7 @@ You can try this code at this [Rust Playground](https://play.rust-lang.org/?vers
 
 Generic lifetime parameters are annotated inside angle brackets between the function name and the
 parameter list. Since the constraint we want to express in this signature is *that all the
-references in the parameters and the return value must have the same lifetime*, de used the same
+references in the parameters and the return value must have the same lifetime*, we used the same
 lifetime name `'a` and then add it to each reference in the function signature.
 
 There is nothing special about the name `'a` in this case; it would be just as fine to use any other
