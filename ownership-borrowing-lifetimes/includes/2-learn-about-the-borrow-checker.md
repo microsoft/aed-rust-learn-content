@@ -15,16 +15,17 @@ fn change(text: &mut String) {
 }
 ```
 
-Mutable data can be mutably borrowed using `&mut T`. This is called a *mutable reference* or
+Mutable data can be borrowed using `&mut T`. This is called a *mutable reference* or
 *mutable borrow* and gives read/write access to the borrower. In contrast, `&T` borrows the data via
 an *immutable reference*, and the borrower can read the data but not modify it.
 
-Note that you may have one or the other of these two kinds of borrows, but not both at the same
+You may have either one or the other of these two kinds of borrows, but not both at the same
 time:
+
 - one or more references (`&T`) to a resource.
 - exactly one mutable reference (`&mut T`)
 
-The following code would fail to compile, then:
+The following code would then fail to compile:
 
 ```rust
 fn main() {
