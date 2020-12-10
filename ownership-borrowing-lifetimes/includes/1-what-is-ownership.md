@@ -23,7 +23,7 @@ Let’s say we have a `mascot` variable that is a string literal, defined within
 It is valid from the point at which it’s declared until the end of that scope. Whenever an object
 goes out of scope its resources are freed from memory.
 
-If we try to use \`mascot\` beyond its scope, we will get an error like this:
+If we try to use `mascot` beyond its scope, we will get an error like this:
 
 ```rust
 {
@@ -38,7 +38,7 @@ println!("{}", mascot);
     5 |     println!("{}", mascot);
       |                    ^^^^^^ not found in this scope
 
-You can run this exemple online at this [Rust Playground link](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=1fc552675319bd4a6954339519513f6e).
+You can run this example online at this [Rust Playground link](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=1fc552675319bd4a6954339519513f6e).
 
 ## Move Semantics
 
