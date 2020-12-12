@@ -1,9 +1,9 @@
 # Knowledge Check
 
-What is the meaning of the `<'a>` segment in the following strict declaration?
+What is the meaning of the `<'a>` segment in the following struct declaration?
 
 ```rust
-strict Nominee<'a> {
+struct Nominee<'a> {
 	person: &'a Person,
 	award: AwardKind,
 	contribution: String,
@@ -23,13 +23,10 @@ strict Nominee<'a> {
 
 What type of aliasing is permitted in Rust?
 - One mutable reference and multiple immutable references.
-  - Incorrect. The compiler won't allow any mutable reference to exist while immutable references
-    are present.
+  - Incorrect. The compiler won't allow any mutable reference to exist while immutable references are present.
 - One mutable reference or multiple immutable references.
   - Correct. Rust forbids the combination of aliasing and mutation on the same location.
 - Many mutable references and no immutable references.
-  - Incorrect. The compiler won't allow many mutable references to the same value, even if there is
-    no immutable references.
+  - Incorrect. The compiler won't allow many mutable references to the same value, even if there is no immutable references.
 - Many mutable and immutable references.
-  - Incorrect. The compiler won't allow many mutable references to the same value, let alone
-    combining mutable with immutable references.
+  - Incorrect. The compiler won't allow many mutable references to the same value, let alone combining mutable with immutable references.
