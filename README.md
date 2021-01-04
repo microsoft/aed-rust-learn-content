@@ -15,7 +15,7 @@ This repo contains all of the development of Rust lang content for Learn. Once c
 | Module 3 content | @tilacog + @meaghanlewis | Complete | 12/4/2020 |
 | Module 3 content to Aquent | @shanama | Complete | 12/8/2020 |
 | Module 4 content | @tilacog + @meaghanlewis | In progress | 12/11/2020 |
-| Module 4 content to Aquent | @shanama | Not Started | 1/5/2020 |
+| Module 4 content to Aquent | @shanama | Not Started | 1/5/2021 |
 | Module 5 content | @tilacog + @meaghanlewis | In progress | 12/18/2020 |
 | Module 5 content to Aquent | @shanama | Not Started | 1/12/2021 |
 | Module 6 content | @tilacog + @meaghanlewis | In progress | 12/31/2020 |
