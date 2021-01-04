@@ -12,15 +12,15 @@ This repo contains all of the development of Rust lang content for Learn. Once c
 | Module 1 content to Aquent | @shanama | Complete | 11/24/2020 |
 | Module 2 content | @tilacog + @meaghanlewis | Complete | 11/16/2020 |
 | Module 2 content to Aquent | @shanama | Complete | 12/1/2020 |
-| Module 3 content | @tilacog + @meaghanlewis | In progress | 12/4/2020 |
-| Module 3 content to Aquent | @shanama | Not Started | 12/8/2020 |
+| Module 3 content | @tilacog + @meaghanlewis | Complete | 12/4/2020 |
+| Module 3 content to Aquent | @shanama | Complete | 12/8/2020 |
 | Module 4 content | @tilacog + @meaghanlewis | In progress | 12/11/2020 |
-| Module 4 content to Aquent | @shanama | Not Started | 12/15/2020 |
-| Module 5 content | @tilacog + @meaghanlewis | Not started | 12/18/2020 |
-| Module 5 content to Aquent | @shanama | Not Started | 1/5/2021 |
-| Module 6 content | @tilacog + @meaghanlewis | Not started | 12/31/2020 |
+| Module 4 content to Aquent | @shanama | Not Started | 1/5/2020 |
+| Module 5 content | @tilacog + @meaghanlewis | In progress | 12/18/2020 |
+| Module 5 content to Aquent | @shanama | Not Started | 1/12/2021 |
+| Module 6 content | @tilacog + @meaghanlewis | In progress | 12/31/2020 |
 | Module 6 content to Aquent | @shanama | Not Started | 1/12/2021 |
-| Module 7 content | @tilacog + @meaghanlewis | Not started | 1/7/2021  |
+| Module 7 content | @tilacog + @meaghanlewis | In progress | 1/7/2021  |
 | Module 7 content to Aquent | @shanama | Not Started | 1/19/2021 |
 | Module 8 content | @tilacog + @meaghanlewis | Not started |1/14/2021  |
 | Module 8 content to Aquent | @shanama | Not Started | 1/26/2021 |
