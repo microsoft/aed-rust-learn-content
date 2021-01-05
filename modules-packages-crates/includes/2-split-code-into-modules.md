@@ -1,7 +1,6 @@
 # Split Code into Modules
 
-Besides helping you to better organize your code, modules also provide privacy guarantees to your
-values, types and methods.
+Besides helping you to better organize your code, modules also provide privacy guarantees to your values, types and methods.
 
 Take a look at this examlpe, in which we model a simplified authentication API:
 
@@ -32,12 +31,11 @@ fn main() {
 }
 ```
 
-In the code above we can see that the `authentication` module provides the `User` struct with ith
-`User::new` method, since they're both public *(mind the `pub` keyword)*.
+In the preceding code we can see that the `authentication` module provides the `User` struct with ith `User::new` method, since they're both public *(mind the `pub` keyword)*.
 
-Also, note that this code fails to compile because it tries to access the `username` and
-`password_hash` fields from the `User` struct, but thy are private:
+This code fails to compile because it tries to access the `username` and `password_hash` fields from the `User` struct, but thy are private. Running the code results in the following error:
 
+```output
     error[E0616]: field `username` of struct `User` is private
       --> src/main.rs:28:42
        |
@@ -51,10 +49,9 @@ Also, note that this code fails to compile because it tries to access the `usern
        |                                          ^^^^^^^^^^^^^ private field
 
     error: aborting due to 2 previous errors
+```
 
-This is useful when we want to control which parts of our program can access each part of a given
-module. If we wanted to give read access to the `username` field and write access to the `password`
-field while keeping them private, we could use getter and setter methods:
+This is useful when we want to control which parts of our program can access each part of a given module. If we wanted to give read access to the `username` field and write access to the `password` field while keeping them private, we could use getter and setter methods:
 
 ```rust
 mod authentication {
@@ -78,5 +75,4 @@ mod authentication {
 
 This ensures that every read and write attempt will be controlled by the `authentication` module.
 
-To view the code for this unit, visit this [Rust Playground
-link](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=35b4e3ff0e72ee9d87abaa8313dd3b23).
+To view the code for this unit, visit this [Rust Playground link](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=35b4e3ff0e72ee9d87abaa8313dd3b23).
