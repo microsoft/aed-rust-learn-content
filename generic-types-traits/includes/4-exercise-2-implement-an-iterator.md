@@ -1,17 +1,13 @@
 # Exercise 2 - Implement an Iterator
 
-In this exercise you'll be requested to implement a iterator that returns equal items in a sequence
-grouped in vectors, such as:
+In this exercise you'll implement a iterator that returns equal items in a sequence grouped in vectors, such as:
 
 - **input:** `[ 1, 1, 2, 1, 3, 3 ]`
 - **output:** `[ [1, 1], [2], [1], [3, 3] ]`
 
-Your goal is to finish writing the implementation of the `Iterator` trait for the `Group` struct,
-which will be responsible for keeping the data state in its `inner` field between iterations.
+Your goal is to finish writing the implementation of the `Iterator` trait for the `Group` struct, which will be responsible for keeping the data state in its `inner` field between iterations.
 
-Note that the generic type `T` will need to be an implementor of the trait `PartialEq` since you'll
-need to compare values to perform this assignment. But don't worry about that, because that part is
-already solved for you at the `impl<T: PartialEq>` segment.
+Note that the generic type `T` will need to be an implementor of the trait `PartialEq` since you'll need to compare values to perform this assignment. But don't worry about that, because that part is already solved for you at the `impl<T: PartialEq>` segment.
 
 ```rust
 struct Groups<T> {
@@ -63,8 +59,7 @@ fn main() {
 }
 ```
 
-You can also view this exercise at this [Rust Playground link
-](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=74f513d95c9eab321ec4b71bee7058ca).
+You can also view this exercise at this [Rust Playground link](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=74f513d95c9eab321ec4b71bee7058ca).
 
-To find the sollution for this exercise, check this other [Rust Playground link
+To find a solution for this exercise, check out this [Rust Playground link
 ](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=ea40ee2c11b8fd3937e4a5a7362abea6).
