@@ -2,44 +2,37 @@
 
 Before we start, it is important to explain the concepts behind code organization in Rust programs:
 
--   A **package** is one or more **crates** that provide a set of functionality. A **package**
-    contains a `Cargo.toml` file that describes how to build those **crates**.
--   A **crate** is a compilation unit, which is the smallest amount of code that the Rust compiler
-    can operate on. Once compiled, it will produce either an executable or a library.
--   A **crate** contains an implicit, un-named top-level **module**.
--   A **module** is a *(possibly nested)* unit of code organization inside a **crate**.
--   Recursive definitions can span **modules**, but not **crates**.
+- A **package** is one or more **crates** that provide a set of functionality. A **package** contains a `Cargo.toml` file that describes how to build those **crates**.
+- A **crate** is a compilation unit, which is the smallest amount of code that the Rust compiler can operate on. Once compiled, it will produce either an executable or a library.
+- A **crate** contains an implicit, un-named top-level **module**.
+- A **module** is a *(possibly nested)* unit of code organization inside a **crate**.
+- Recursive definitions can span **modules**, but not **crates**.
 
-# Package
+## Package
 
 Whenever we run the command `$ cargo new <project-name>`, Cargo creates a package for us:
 
     $ cargo new my-project
          Created binary (application) `my-project` package
 
-Here, we have a package that only contains `src/main.rs`, meaning it only contains a binary crate
-named `my-project`:
+Here, we have a package that only contains `src/main.rs`, meaning it only contains a binary crate named `my-project`:
 
     my-project
     ├── src
     │  └── main.rs
     └── Cargo.toml
 
-A package can have multiple binary crates by placing files in the `src/bin` directory: each file
-will be a separate binary crate.
+A package can have multiple binary crates by placing files in the `src/bin` directory: each file will be a separate binary crate.
 
-If a package contains `src/main.rs` and `src/lib.rs`, it has two crates: a library and a binary,
-both with the same name as the package.
+If a package contains `src/main.rs` and `src/lib.rs`, it has two crates: a library and a binary, both with the same name as the package.
 
-# Crate
+## Crates
 
-Rust's compilation model centers on artifacts called crates, that can be compiled into a binary or
-into a library.
+Rust's compilation model centers on artifacts called crates, that can be compiled into a binary or into a library.
 
 ## Library Crates
 
-We've already covered how to create a binary program, and creating a library is just as easy. To
-create a library, pass the `--lib` command line parateter to the `cargo new` command:
+We've already covered how to create a binary program, and creating a library is just as easy. To create a library, pass the `--lib` command line parateter to the `cargo new` command:
 
     $ cargo new --lib my-library
          Created library `my-library` package
@@ -51,13 +44,11 @@ You can see that, instead of a `src/main.rs` file, you now get a =src/lib.rs' fi
     │  └── lib.rs
     └── Cargo.toml
 
-When you tell Cargo to complie this crate, you'll get a library file called `libmy_library.rlib`
-that can be published and linked to other projects.
+When you tell Cargo to complie this crate, you'll get a library file called `libmy_library.rlib` that can be published and linked to other projects.
+ 
+## Modules
 
-# Module
-
-Rust provides a powerful module system that can be used to hierarchically split code into logical
-units and that ease readability and reuse.
+Rust provides a powerful module system that can be used to hierarchically split code into logical units and that ease readability and reuse.
 
 A module is a collection of items:
 
@@ -70,8 +61,7 @@ A module is a collection of items:
 - `impl` blocks
 - Other modules, which can nest arbitrarily.
 
-Modules also control the *privacy* of items, which is whether an item can be used by outside code
-(*public*) or is an internal implementation detail and not available for outside use (*private*).
+Modules also control the *privacy* of items, which is whether an item can be used by outside code (*public*) or is an internal implementation detail and not available for outside use (*private*).
 
 An example of a module:
 
@@ -86,18 +76,11 @@ mod math {
 println!("{}", math::cos(45.0));
 ```
 
-If a source file has `mod` declarations in it, then the contents of the module files would be
-inserted in places where `mod` declarations in the source file are found, before running the
-compiler over it. In other words, modules do not get compiled individually, only crates get
-compiled.
+If a source file has `mod` declarations in it, then the contents of the module files would be inserted in places where `mod` declarations in the source file are found, before running the compiler over it. In other words, modules do not get compiled individually, only crates get compiled.
 
-You might've noticed the `pub` keyword at the beginning of the function definitions in the `math`
-module.
+You might've noticed the `pub` keyword at the beginning of the function definitions in the `math` module.
 
-To control whether items can be used across modules, the Rust compiler perform checks to see whether
-they should be allowed or not. By default, everything in Rust is private and can only beaccessed by
-the current module and its descendants. In contrast, when an item is declared as `pub`, it can be
-thought of as being accessible to the outside world. For example:
+To control whether items can be used across modules, the Rust compiler perform checks to see whether they should be allowed or not. By default, everything in Rust is private and can only beaccessed by the current module and its descendants. In contrast, when an item is declared as `pub`, it can be thought of as being accessible to the outside world. For example:
 
 ```rust
 // Declare a private struct
@@ -115,5 +98,4 @@ pub enum State {
 }
 ```
 
-Rust's privacy rules are surprisingly powerful for creating module hierarchies exposing public APIs
-while hiding internal implementation details.
+Rust's privacy rules are surprisingly powerful for creating module hierarchies exposing public APIs while hiding internal implementation details.
