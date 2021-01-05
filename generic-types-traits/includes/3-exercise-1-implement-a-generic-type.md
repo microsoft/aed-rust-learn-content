@@ -1,6 +1,6 @@
 # Exercise 1 - Implement a Generic Type
 
-In this exercise you'll be requested to transform a `Container` struct that only accepts positive
+In this exercise you'll transform a `Container` struct that only accepts positive
 integers of the `u32` type into a generic container that can hold values of any given type.
 
 Do not edit any content inside the `main` funcion. This exercise is complete when the code complies.
@@ -27,8 +27,6 @@ fn main() {
 }
 ```
 
-You can also view this exercise at this [Rust Playground link
-](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=deb167131f297b09ddd1df639e1b3be9).
+You can also view this exercise at this [Rust Playground link](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=deb167131f297b09ddd1df639e1b3be9).
 
-To find the sollution for this exercise, check this other [Rust Playground
-link](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=b944b719262d7a86ba4dc801a78a2c71).
+To find a solution for this exercise, check out this [Rust Playground link](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=b944b719262d7a86ba4dc801a78a2c71).
