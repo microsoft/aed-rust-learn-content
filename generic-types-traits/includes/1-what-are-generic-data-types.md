@@ -6,7 +6,9 @@ A generic data type is a type that is defined in terms of other partially unknow
 - The `Result<T, E>` is generic over both its success and failure type, contained by its `Ok` and `Err` variants, respectively.
 - The vector type `Vec<T>`, the array type `[T; n]` and the hashmap `HashMap<K, V>` are generic over the types they contain.
 
-When we use generic types, we can specify the operation we want without many concearns about some of the inner types held by the defined type.
+When we use generic types, we can specify the operation we want without many concerns about some of the inner types held by the defined type.
+
+## Implement a generic data type
 
 To implement a new generic type, we must declare the name of the type parameter inside angle brackets just after the name of the struct. Then we can use the generic type in the struct definition where we would otherwise specify concrete data types.
 
@@ -49,7 +51,7 @@ The code results in this error:
       |                                       ^^^^ expected integer, found `bool`
 ```
 
-The error message says that the expected type for the `y` field was an integer, but since we had defined `y` to have the same type as `x`, the compiler complained of a type mismatch error.
+The error message says that the expected type for the `y` field was an integer, but since we defined `y` to have the same type as `x` in the example, the compiler complained of a type mismatch error.
 
 If we wanted a `Point<T, U>` generic over two types so that `x` and `y` can be values of different types, we should use multiple generic type parameters:
 
@@ -68,7 +70,7 @@ fn main() {
 }
 ```
 
-Keep in mind that all of the `Point` types above have **different concrete types**. In order:
+Notice that all of the `Point` types above have **different concrete types**. In order they are:
 
 - `Point<integer, bool>`
 - `Point<f64, &'static str>`
