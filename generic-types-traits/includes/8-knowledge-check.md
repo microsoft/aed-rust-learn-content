@@ -1,31 +1,18 @@
 # Knowledge check
 
-What does the following type declaration means?
+When Rust Traits can be useful?
 
-```rust
-struct  Content<T: Summary> {
-  date_published: Date,
-  reviewed: bool,
-  content: T
-}
-```
+- When a function or struct needs to accept optional parameters.
+  - False. In Rust there are no optional parameters in function or struct signatures.
+- When we need to specify function or struct parameters in terms of of behaviour instead of concrete value.
+  - True.
+- When we need to avoid the compile time guarantees of the Borrow Checker.
+  - False. Rust compile time guarantees can't be affected by using Traits
+- When we need our values to continue valid even past their lifefime scope.
+  - False. Traits can't alter when values go out of scope.
 
-- `Content` is a struct that is generic over its `date_published` and `content` fields.
-  - False. The `date_published` is not a generic field. It always receives a value of type `Date`.
-- `Content` is generic over its `content` field, which can be of any type.
-  - False. The `content` field type is restricted for implementors of the `Summary` trait.
-- `Content` is generic over its `content` field, which can be of any type that implements the `Summary` trait.
-  - Correct.
-- `Content` is generic over its field `date_published`, which can be of any type that implements the `Date` trait.
-  - False. `Date` is a type, not a trait, and `Content` is not generic over its `date_published` field.
 
-What does the following function signature means?
-
-```rust
-fn print_to_user<T: Display>(data: T) {
-  println!("Hey, here is some data: {}", data);
-}
-```
+What does this function signature mean? `fn show_on_screen<T: Display>(data: T)`
 
 - The `data` parameter can be of any type.
   - False. The type of `data` must be any type that implements the `Display` trait.
