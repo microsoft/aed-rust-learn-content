@@ -28,7 +28,10 @@ If a package contains `src/main.rs` and `src/lib.rs`, it has two crates: a libra
 
 ## Crates
 
-Rust's compilation model centers on artifacts called crates, that can be compiled into a binary or into a library.
+Rust's compilation model centers on artifacts called **crates**, that can be compiled into a binary or into a library.
+
+Every project that you create with the `cargo new` command is a crate, itself. All third party rust code that you can use as dependencies in your
+project are also, each, a single crate.
 
 ## Library Crates
 
