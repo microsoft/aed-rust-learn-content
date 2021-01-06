@@ -14,5 +14,6 @@ In this module, you will learn:
 
 # Prerequisites
 
-To understand this chapter, you must have understood Rust's Type System concepts and have
-consolidated your understanding of Move Semantics.
+To make sense of this chapter, you must have a solid understanding of Rust's Type System and Move
+Semantics. If you have any questions about those topics, please review our previous module:
+**Understand ownership, borrowing and lifetimes**.
