@@ -1,4 +1,4 @@
-# Scoping Terminology
+# Understand Concepts Behind Code Organization
 
 Before we start, it is important to explain the concepts behind code organization in Rust programs:
 
