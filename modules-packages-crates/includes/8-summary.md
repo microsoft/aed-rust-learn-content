@@ -2,7 +2,7 @@
 
 In this module, you learned:
 
-- The difference between packages, crates and modules.
+- How to differentiate between packages, crates and modules.
 - How to organize your code in many modules.
 - How to split your modules between different files.
 - How to use third party crates from [Crates.io](https://crates.io).
