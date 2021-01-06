@@ -1,7 +1,6 @@
 # Exercise - Modules
 
-Your assignment in this exercise is to make the following code compile without modifying the `main`
-function.
+Your assignment in this exercise is to make the following code compile without modifying the `main` function.
 
 ```rust
 mod text_processing {
@@ -34,8 +33,6 @@ fn main() {
 
 Hint: The compiler error should point to the thing that needs to be public.
 
-You can also view this exercise at this [Rust Playground
-link](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=448be9f8ab548543ada9d3640b3d7d93).
+You can also view this exercise at this [Rust Playground link](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=448be9f8ab548543ada9d3640b3d7d93).
 
-To find the sollution for this exercise, check this other [Rust Playground
-link](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=7c0fa8c5f5aeac10ad0b674469b70a01).
+To find a solution for this exercise, check out this [Rust Playground link](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=7c0fa8c5f5aeac10ad0b674469b70a01).
