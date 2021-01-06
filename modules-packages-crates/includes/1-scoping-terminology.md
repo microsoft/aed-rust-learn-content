@@ -45,7 +45,7 @@ You can see that, instead of a `src/main.rs` file, you now get a =src/lib.rs' fi
     └── Cargo.toml
 
 When you tell Cargo to complie this crate, you'll get a library file called `libmy_library.rlib` that can be published and linked to other projects.
- 
+
 ## Modules
 
 Rust provides a powerful module system that can be used to hierarchically split code into logical units and that ease readability and reuse.
@@ -59,7 +59,7 @@ A module is a collection of items:
 - Enums
 - Traits
 - `impl` blocks
-- Other modules, which can nest arbitrarily.
+- Other modules
 
 Modules also control the *privacy* of items, which is whether an item can be used by outside code (*public*) or is an internal implementation detail and not available for outside use (*private*).
 
