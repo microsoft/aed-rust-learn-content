@@ -1,33 +1,24 @@
 # Knowledge check
 
-Why does the following code won't compile?
+Each of the following, if true, describe **modules** in Rust, EXCEPT:
 
-```rust
-mod container {
-    pub struct ClosedBox<T> {
-	contents: T,
-    }
-    impl<T> ClosedBox<T> {
-	pub fn new(contents: T) -> ClosedBox<T> {
-	    ClosedBox { contents: contents }
-	}
-    }
-}
+- A module is a (possibly nested) unit of code organization inside a crate.
+  - Incorrect. This statement is true.
+- There are two ways to declare modules in Rust: inline or in another file.
+  - Incorrect. This statement is true.
+- A module is a compilation unit, which is the smallest amount of code that the Rust compiler can operate on.
+  - Correct. The smallest compilation unit in Rust is a **crate**, not a **module**.
+- A module is a collection of items: functions, structs, traits, impl blocks, and even other modules.
+  - Incorrect. This statement is true.
 
-fn main() {
-    let closed_box = container::ClosedBox::new("classified information");
-    println!("The closed box contains: {}", closed_box.contents);
-```
 
--   The struct `ClosedBox` is generic over the type `T` and `T` cannot be printed using the `"{}"`
-    format specifier.
-    -   Incorrect. In the example code, `ClosedBox` was used with the concrete type `&str`, which
-        does implement the `Display` trait and thus can be formatted using the `"{}`" specifier.
--   The struct `ClosedBox` is private in the `main` function scope.
-    -   Incorrect. The `pub` keyword before the `struct ClosedBox` declaration specifies that it is
-        accessible whenever the `container` module is visible.
--   The `ClosedBox::new` function is private.
-    -   Incorrect. The `pub` keyword before the `fn new` declaration specifies that it is accessible
-        whenever the `container` module is visible.
--   The field `contents` of struct `ClosedBox` is private.
-    -   Correct
+Each of the following, if true, describe **third party modules** in Rust, EXCEPT:
+
+- Dependencies can be fetched and compiled by Cargo.
+  - Incorrect. This statement is true.
+- Third party crates and their intended versions should be declared in the `src/main.rs` file.
+  - Correct. Third party crates should be decalared in the `Cargo.toml` file.
+- Dependencies are normally fetched from the Crates.io repository.
+  - Incorrect. This statement is true.
+- Only public items can be accessed from third party crates.
+  - Incorrect. This statement is true.
