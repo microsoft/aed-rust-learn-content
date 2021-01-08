@@ -1,13 +1,6 @@
 # Knowledge Check
 
-## What is the expected outcome of this test function?
-
-```rust
-#[test]
-fn math_works() {
-    assert_eq!(2 + 2, 4)
-}
-```
+## What is the expected outcome of a test function tagged with the `#[test]` attribute?
 
 - This function should not be executed during tests.
   - Incorrect. The `$[ignore]` attribute, which disables a test function during test execution, is
@@ -18,16 +11,7 @@ fn math_works() {
 - This function should execute without any panic.
   - Correct.
 
-## What is the expected outcome of this test function?
-
-```rust
-#[test]
-#[should_panic]
-fn unwrap_is_dangerous() {
-    let content: Option<String> = None;
-    assert_eq!(content.unwrap(), String::from(""))
-}
-```
+## What is the expected outcome of a test function tagged with the `#[test]` and `#[should_panic]` attributes?
 
 - This function should not be executed during tests.
   - Incorrect. The `$[ignore]` attribute, which disables a test function during test execution, is
@@ -37,16 +21,7 @@ fn unwrap_is_dangerous() {
 - This function should execute without any panic.
   - Incorrect. The `$[should_panic]` attribute indicates a test should generate a panic.
 
-## What is the expected outcome of this test function?
-
-```rust
-#[test]
-#[ignore = "api design isn't finished yet"]
-fn unstable_feature() {
-    let foo: Bar::new();
-    assert_eq!(foo.x_axis, (0, 0));
-}
-```
+## What is the expected outcome of a test function tagged with the `#[test]` and `#[ignore]` attributes?
 
 - This function should not be executed during tests.
   - Correct. The `#[ignore]` attribute disables a test function during test execution.
