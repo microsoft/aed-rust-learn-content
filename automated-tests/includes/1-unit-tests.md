@@ -1,7 +1,7 @@
 # Unit Tests
 
 Unit Tests in Rust are simple functions marked with the `#[test]` attribute that verify that the
-non-test code is functioning in the expected manner.These functions are only compiled when testing
+non-test code is functioning in the expected manner. These functions are only compiled when testing
 our code.
 
 The bodies of test functions typically perform some setup, run the code we want to test, then assert
@@ -23,16 +23,16 @@ fn add_works() {
 }
 ```
 
-If we execute the command `$ cargo test`, our output would the following:
+When we execute the command `$ cargo test`, our output would the following:
 
-```
+```output
 running 1 test
 test add_works ... ok
 
 test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out
 ```
 
-# Test failures
+## Test failures
 
 Lets try to include a failing test, just to see how `cargo tests` behaves.
 
@@ -46,7 +46,7 @@ fn add_fails() {
 If we ran the tests again using the `$ cargo test` command, the output should point out that our
 `add_works` test passed and `add_fails` failed, with the detail of the failed call to `assert_eq`.
 
-```
+```output
 running 2 tests
 test add_works ... ok
 test add_fails ... FAILED
@@ -66,9 +66,9 @@ failures:
 test result: FAILED. 1 passed; 1 failed; 0 ignored; 0 measured; 0 filtered out
 ```
 
-# Expected failures
+## Expected failures
 
-In many scenarios it is important to test if a condition will cause a `panic!`.
+In many scenarios it's important to test if a condition will cause a `panic!`.
 
 We can do this by adding another attribute, `should_panic`, to our test function. This attribute
 makes a test pass if the code inside the function panics, and makes the test fail if the code inside
@@ -86,7 +86,7 @@ fn add_fails() {
 
 And our tests results will be:
 
-```
+```output
 running 2 tests
 test add_works ... ok
 test add_fails ... ok
@@ -94,7 +94,7 @@ test add_fails ... ok
 test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out
 ```
 
-# Ignoring tests
+## Ignoring tests
 
 A function annotated with the `[test]` attribute can also be annotated with the `[ignore]`
 attribute. This causes that test function to be skpipped during tests.
@@ -120,7 +120,7 @@ test add_fails ... ok
 test result: ok. 2 passed; 0 failed; 1 ignored; 0 measured; 0 filtered out
 ```
 
-The test module
+## The test module
 
 Most unit tests go into a submodule with the `#[cfg(test)]` attribute.
 
@@ -152,15 +152,13 @@ mod add_function_tests {
 	assert_eq!(add(-2, -2), -4)
     }
 }
-
 ```
 
-The `cfg` attribute controls conditinal compilation, and will only compile the thing it is attached
+The `cfg` attribute controls conditional compilation, and will only compile the thing it is attached
 to if the predicate is `true`. The `test` compilation flag is issued automatically by Cargo whenever
 we execute the command `$ cargo run`, so it will always be true when we run our tests.
 
 The `use super::*;` declaration is necessary for the code inside the `add_funtcion_tests` module to
 access the `add` in the outer module.
 
-You can find the code used in this unit at this [Rust Playground
-link](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=f74afccf321c642e7ebea8633a3f4b32).
+You can find the code used in this unit at this [Rust Playground link](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=f74afccf321c642e7ebea8633a3f4b32).
