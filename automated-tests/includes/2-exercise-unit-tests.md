@@ -24,8 +24,6 @@ mod tests {
 }
 ```
 
-You can also view this exercise at this [Rust Playground
-link](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=2af390896e18dda3bb70c0a3de4c4aa1).
+You can also view this exercise at this [Rust Playground link](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=2af390896e18dda3bb70c0a3de4c4aa1).
 
-To find the sollution for this exercise, check this other [Rust Playground
-link](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=1832ce3596a0f9e9104f5752199fbbe7).
+To find the solution for this exercise, check out this [Rust Playground link](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=1832ce3596a0f9e9104f5752199fbbe7).
