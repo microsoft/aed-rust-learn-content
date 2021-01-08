@@ -1,10 +1,8 @@
 # Documention Tests
 
-The primary way of documenting a Rust library is through annotating the source code with triple
-forward slashes, known as *documentation comments*.
+The primary way of documenting a Rust library is through annotating the source code with triple forward slashes *(///)*, known as *documentation comments*.
 
-Documentation comments are written in markdown and support code blocks in them, so these code blocks
-are compiled and used as tests.
+Documentation comments are written in markdown and support code blocks in them, so these code blocks are compiled and used as tests.
 
 To try out this feature, you'll need to create a new library project first.
 
@@ -13,7 +11,7 @@ $ cargo new --lib basic_math
 $ cd basic_math
 ```
 
-Open the file `src/lib.rs` in your editor and put the following code in it:
+Open the file `src/lib.rs` in Visual Studio Code and put the following code in it:
 
 ```rust
 /// Generally, the first line is a brief summary describing the function.
@@ -30,10 +28,9 @@ pub fn add(a: i32, b: i32) -> i32 {
 }
 ```
 
-You can call the test suite for this code with the command `$ cargo test`, and the output would be
-like this:
+You can call the test suite for this code with the command `$ cargo test`, and the output would look like this:
 
-```
+```output
 $ cargo test
     Finished test [unoptimized + debuginfo] target(s) in 0.00s
      Running target/debug/deps/basic_math-910b859a2a6f3c3f
