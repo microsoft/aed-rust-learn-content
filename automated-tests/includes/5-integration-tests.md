@@ -1,23 +1,19 @@
 # Integration Tests
 
-While unit and documentation tests provide conciseness and specific tests, it is generally a good
-idea to test our crate as a whole, to test that many parts of our code work correctly together.
+While unit and documentation tests provide conciseness and specific tests, it is generally a good idea to test our crate as a whole, to test that many parts of our code work correctly together.
 
-Rust test suite can also handle *integration tests* so that we can test our library in the same way
-any other code would, meaning we can only call functions that are part of our library’s public API.
+Rust test suite can also handle *integration tests* so that we can test our library in the same way any other code would, meaning we can only call functions that are part of our library’s public API.
 
-Cargo looks for integration tests in *tests* directory (next to the *src* folder) and will run each
-source file in it.
+Cargo looks for integration tests in *tests* directory (next to the *src* folder) and will run each source file in it.
 
-Lets try out how to write integration tests by creating a new small project. Run the following
-commands in your terminal:
+Lets try out how to write integration tests by creating a new small project. Run the following commands in your terminal:
 
 ```sh
 $ cargo new --lib rusty_pizza
 $ cd rusty_pizza
 ```
 
-For this example, we will use a simple `Pizza` struct with private and public methods.
+For this example, we'll use a simple `Pizza` struct with private and public methods.
 
 ```rust
 pub struct Pizza {
@@ -43,11 +39,9 @@ impl Pizza {
 }
 ```
 
-The snippet above features a `Pizza` struct with two public methods, `Pizza::pepperoni` and
-`Pizza::mozzarella`, that rely in the private method `Piza::bake` to prepare our pizzas.
+The snippet above features a `Pizza` struct with two public methods, `Pizza::pepperoni` and `Pizza::mozzarella`, that rely in the private method `Piza::bake` to prepare our pizzas.
 
-Create a new directory named `tests` alongside the `src` directory and place a new file called
-`pizzas.rs` in it, with the following contents:
+Create a new directory named `tests` alongside the `src` directory and place a new file called `pizzas.rs` in it, with the following contents:
 
 ```rust
 use rusty_pizza::Pizza;
@@ -67,10 +61,9 @@ fn can_make_mozzarella_pizza() {
 }
 ```
 
-Now that our integration tests setup is done, we can execute the `cargo test` command to see the
-results:
+Now that our integration tests setup is done, we can execute the `cargo test` command to see the results:
 
-```
+```output
 running 0 tests
 
 test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out
@@ -90,16 +83,8 @@ running 0 tests
  test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out
 ```
 
-Inspecting the output reveals that Rust places each kind of test is a differnt section:
+Inspecting the output reveals that Rust places each kind of test is a different section: unit tests, integration tests, and documentation tests.
 
-1.  unit tests,
-2.  integration tests, and
-3.  documentation tests.
+In the integration tests section we can see that our two tests inside the `tests/pizzas.rs` file were collected and executed by the test suite.
 
-In the integration tests section we can see that our two tests inside the `tests/pizzas.rs` file
-were collected and executed by the test suite.
-
-Keep in mind that only library crates can be tested via integration tests because binary crates
-don't expose any functionality that other crates can use. Nonetheless, many Rust crates that provide
-a binary have a succinct `src/main.rs` file that calls logic that lives in a `src/lib.rs` file.
-Using that structure, integration tests can test the important parts of the code.
+Keep in mind that only library crates can be tested via integration tests because binary crates don't expose any functionality that other crates can use. Nonetheless, many Rust crates that provide a binary have a succinct `src/main.rs` file that calls logic that lives in a `src/lib.rs` file. Using that structure, integration tests can test the important parts of the code.
