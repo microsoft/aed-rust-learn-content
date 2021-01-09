@@ -1,19 +1,17 @@
-In this module, you're going to discover **Traits** and **Generics**, which are Rust's way to deal
+In this module, you're going to discover **traits** and **generics**, which are Rust's way to deal
 with the concept of *polymorphism*. Together, they allow us to write code that act on values of many
 different types, even types that haven't been declared yet.
 
 # Learning Objectives
 
-In this module, you will learn:
+In this module, you'll learn:
 
--   What are Generic types and how "wrapper" types uses them.
--   What are Traits and how they help us define shared behaviour.
--   How to implement an existing Trait for a custom type.
--   How to implement a custom Trait for an existing type.
--   What are trait bounds and how they help us write generic functions.
+- What generic types are and how "wrapper" types uses them.
+- What traits are and how they help us define shared behavior.
+- How to implement an existing trait for a custom type.
+- How to implement a custom trait for an existing type.
+- How trait bounds help us write generic functions.
 
 # Prerequisites
 
-To make sense of this chapter, you must have a solid understanding of Rust's Type System and Move
-Semantics. If you have any questions about those topics, please review our previous module:
-**Understand ownership, borrowing and lifetimes**.
+- Have a solid understanding of Rust's types, ownerships, and moves. If you have any questions about those topics, please review the module: **Understand ownership, borrowing and lifetimes**.

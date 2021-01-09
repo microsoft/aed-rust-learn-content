@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: 
 metadata:
-  title: Introduction
-  description: Introduction
+  title: Exercise - Implement a Generic Type
+  description: 
   ms.date: 
   author: meaghanlewis
   ms.author: shanama
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Introduction
+title: Exercise - Implement a Generic Type
 durationInMinutes: 1
 content: |
-  [!include[](includes/0-introduction.md)]
+  [!include[](includes/6-exercise-implement-a-generic-type.md)]

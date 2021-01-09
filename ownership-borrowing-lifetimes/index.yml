@@ -11,11 +11,12 @@ metadata:
 title: Understand Ownership, Borrowing and Lifetimes
 summary: "Discover one of Rust's most powerful features: the Borrow Checker."
 abstract:  |
-  In this module, you will learn about:
-  - Rust's pointer types, commonly called References.
-  - The concept of ownership in Rust.
-  - Moving and borrowing values.
-  - Scoping rules and Lifetimes.
+  In this module, you'll learn about:
+  - What generic types are and how "wrapper" types uses them.
+  - What traits are and how they help us define shared behavior.
+  - How to implement an existing trait for a custom type.
+  - How to implement a custom trait for an existing type.
+  - How trait bounds help us write generic functions.
 prerequisites: | 
   - You should have a basic understanding of Rust's primitive and collection types, as covered in the previous modules.
 iconUrl: /learn/achievements/generic-badge.svg # TODO change

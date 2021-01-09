@@ -1,9 +1,10 @@
-# Derive
+# How to use the derive trait
 
-You might have noticed that our custom types are a little unwieldy to use in practice. This simple
-`Point` struct cannot be compared to other `Point` instances or displayed in the therminal.
+You might have noticed that our custom types are a little difficult to use in practice. This simple `Point` struct cannot be compared to other `Point` instances or displayed in the terminal. Because of this, we might want to use the **derive** attribute to allow new items to automatically be generated for the struct.
 
-The following code example will fail for three reasons:
+## Downside of generic types
+
+Take a look at the following code example:
 
 ```rust
 struct Point {
@@ -15,18 +16,21 @@ fn main() {
     let p1 = Point { x: 1, y: 2 };
     let p2 = Point { x: 4, y: -3 };
 
-    if p1 == p2 {          // can't compare two Point values!
-	println!("equal!");
+    if p1 == p2 { // can't compare two Point values!
+        println!("equal!");
     } else {
-	println!("not equal!");
+        println!("not equal!");
     }
 
-    println!("{}", p1);     // can't print using the '{}' format specifier!
-    println!("{:?}", p1);  //  can't print using the '{:?}' format specifier!
+    println!("{}", p1); // can't print using the '{}' format specifier!
+    println!("{:?}", p1); //  can't print using the '{:?}' format specifier!
 
 }
 ```
 
+The preceding code will fail for three reasons. See the output below:
+
+```output
     error[E0277]: `Point` doesn't implement `std::fmt::Display`
       --> src/main.rs:10:20
        |
@@ -60,18 +64,18 @@ fn main() {
        = note: an implementation of `std::cmp::PartialEq` might be missing for `Point`
 
     error: aborting due to 3 previous errors#+end_example
+```
 
-This code fails to compiple because our `Point` type does not implement the following traits:
+This code fails to compile because our `Point` type does not implement the following traits:
 
--   the `Debug` trait, that allows a type to be formatted using the `{:?}` format specifier, used in
-    a programmer-facing, debugging context.
--   the `Display` trait, that allows a type to be formatted using the `{}` format specifier, is
-    similar to `Debug`, but Display is better suited for user-facing output.
--   the `PartialEq` trait, that allows implementors to be compared for equality.
+- The `Debug` trait, that allows a type to be formatted using the `{:?}` format specifier, used in a programmer-facing, debugging context.
+- The `Display` trait, that allows a type to be formatted using the `{}` format specifier, is
+similar to `Debug`, but Display is better suited for user-facing output.
+- The `PartialEq` trait, that allows implementors to be compared for equality.
 
-Luckily, the `Debug` and `PartialEq` traits can be automatically implemented for us by the Rust
-compiler using the `#[derive(Trait)]` attribute, provided that each of its fields implements the
-trait:
+## Using derive
+
+Luckily, the `Debug` and `PartialEq` traits can be automatically implemented for us by the Rust compiler using the `#[derive(Trait)]` attribute, provided that each of its fields implements the trait:
 
 ```rust
 #[derive(Debug, PartialEq)]
@@ -82,11 +86,12 @@ struct Point {
 ```
 
 Our code will still fail to compile because Rust's standard library does not provide automatic
-implementation for the `Display` trait, since it is meant for end-users, but if we comment out that
-line our code would now produce this output:
+implementation for the `Display` trait, since it is meant for end-users, but if we comment out that line our code would now produce this output:
 
+```output
     Point { x: 1, y: 2 }
     not equal!
+```
 
 Nevertheless, we can implement the `Display` trait for our type by ourselves:
 
@@ -95,16 +100,17 @@ use std::fmt;
 
 impl fmt::Display for Point {
     fn fmt(&self, f: &mut fmt::Formatter<'_>) -> fmt::Result {
-	write!(f, "({}, {})", self.x, self.y)
+    write!(f, "({}, {})", self.x, self.y)
     }
 }
 ```
 
 and our code wil then compile just fine:
 
+```output
     (1, 2)
     Point { x: 1, y: 2 }
     not equal!
+```
 
-Check out the code of this example at this [Rust Playground link
-](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=83e972b28e9d02bd93540f9e292ad20b).
+Check out the code of this example at this [Rust Playground link](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=83e972b28e9d02bd93540f9e292ad20b).

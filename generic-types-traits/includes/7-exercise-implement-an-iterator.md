@@ -1,7 +1,6 @@
-# Exercise 2 - Implement an Iterator
+# Exercise - Implement an Iterator
 
-In this exercise you'll be requested to implement a iterator that returns equal items in a sequence
-grouped in vectors, such as:
+In this exercise you'll be requested to implement a iterator that returns equal items in a sequence grouped in vectors, such as:
 
 - **input:** `[ 1, 1, 2, 1, 3, 3 ]`
 - **output:** `[ [1, 1], [2], [1], [3, 3] ]`

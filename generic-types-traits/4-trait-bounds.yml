@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: 
 metadata:
-  title: Introduction
-  description: Introduction
+  title: Using trait bounds and generic functions
+  description: 
   ms.date: 
   author: meaghanlewis
   ms.author: shanama
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Introduction
+title: Using trait bounds and generic functions
 durationInMinutes: 1
 content: |
-  [!include[](includes/0-introduction.md)]
+  [!include[](includes/4-trait-bounds.md)]

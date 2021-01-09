@@ -1,0 +1,32 @@
+### YamlMime:Module
+uid: ""
+metadata:
+  title:  Implement generic types and traits
+  description: "Understand what generic types and traits are and how to use them in Rust."
+  ms.date: 
+  author: meaghanlewis
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Implement generic types and traits
+summary: "Understand what generic types and traits are and how to use them in Rust."
+abstract:  |
+  In this module, you will learn about:
+  - Rust's pointer types, commonly called References.
+  - The concept of ownership in Rust.
+  - Moving and borrowing values.
+  - Scoping rules and Lifetimes.
+prerequisites: | 
+  - - Have a solid understanding of Rust's types, ownerships, and moves. If you have any questions about those topics, please review the module: **Understand ownership, borrowing and lifetimes**.
+iconUrl: /learn/achievements/generic-badge.svg # TODO change
+levels:
+- beginner
+roles:
+- developer
+- student
+products:
+- ""
+units:
+- ""
+badge:
+  uid: ""

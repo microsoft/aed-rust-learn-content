@@ -1,10 +1,8 @@
-# Trait Bounds // Generic Functions
+# Using trait bounds and generic functions
 
-Traits let us define functions that accept many different types, because when a type implements a
-trait it can be treated abstractly as that trait.
+Traits let us define functions that accept many different types, because when a type implements a trait it can be treated abstractly as that trait.
 
-We can declare function arguments to be an anonymous type parameter where the callee must provide a
-type that has the bounds declared by the anonymous type parameter.
+We can declare function arguments to be an anonymous type parameter where the callee must provide a type that has the bounds declared by the anonymous type parameter.
 
 Lets imagine that we are writing a web application and would like to have a interface for
 serializing values to the JSON format. We could write a trait like this:
@@ -28,11 +26,9 @@ fn send_data_as_json(value: &impl AsJson) {
 
 Instead of a concrete type for the `item` parameter, we specify the `impl` keyword and the trait
 name. This parameter accepts any type that implements the specified trait. Note that since the
-function doesn't know anything about the concrete type it will receive, it can only use the methods
-available by the trait bounds of the anonymous type parameter.
+function doesn't know anything about the concrete type it will receive, it can only use the methods available by the trait bounds of the anonymous type parameter.
 
-Another way to write the same function, but with a litte different syntax, that explicictly tells
-that T is a generic type that must implement the `AsJson` trait:
+Another way to write the same function, but with a litte different syntax, that explicitly tells that T is a generic type that must implement the `AsJson` trait:
 
 ```rust
 fn send_data_as_json<T: AsJson>(value: &T) { ... }
@@ -94,8 +90,7 @@ fn main() {
 }
 ```
 
-But what happens when we pass a type that doesn't implement the expected trait to the function? Lets
-create a new struct and see what happens:
+But what happens when we pass a type that doesn't implement the expected trait to the function? Lets create a new struct and see what happens:
 
 ```rust
 struct Cat {
@@ -113,6 +108,7 @@ send_data_as_json(&kitty);
 
 The compiler raises the following error:
 
+```output
     error[E0277]: the trait bound `Cat: AsJson` is not satisfied
       --> src/main.rs:70:23
        |
@@ -121,11 +117,10 @@ The compiler raises the following error:
     ...
     70 |     send_data_as_json(&kitty);
        |                       ^^^^^^ the trait `AsJson` is not implemented for `Cat`
+```
 
-This happened because we tried to use a type which doesn't implement the `AsJson` trait in a place
-which expected that trait: the `send_data_as_json` function.
+This happened because we tried to use a type which doesn't implement the `AsJson` trait in a place which expected that trait: the `send_data_as_json` function.
 
-To view the code used in this unit, visit this [Rust Playground link
-](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=eb322a632e8eca7f39056fcc6c966163).
+To view the code used in this unit, visit this [Rust Playground link](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=eb322a632e8eca7f39056fcc6c966163).
 
 As an optional challenge, you can try to implement the `AsJson` trait for the `Cat` type.
