@@ -1,7 +1,7 @@
 # The `list_tasks` function
 
 The third and last action we need to define is the `list_tasks` function. All it needs to do is read
-our journal file and print the list of tasks, if any.
+the journal file and print the list of tasks, if any.
 
 ```rust
 pub fn list_tasks(journal_path: PathBuf) -> Result<()> {
@@ -25,7 +25,7 @@ pub fn list_tasks(journal_path: PathBuf) -> Result<()> {
 }
 ```
 
-This function is a bit more simple than its siblings since it doesn't need to write in our file. We
+This function is a bit more simple than its siblings since it doesn't need to write to the file. We
 reuse the `collect_tasks` helper function again, proving the point of our refactor. Then we check if
 the task vector is empty before attempting to list its contents.
 
@@ -63,10 +63,10 @@ represent our `Task` type as:
 - `{:<50}`: a left-aligned string padded with 50 spaces, followed by
 - `[{}]`: the date and time it was created inside brackets.
 
-# Summary
+## Summary
 
 That concludes our journey into the `tasks.rs` module file. The last step we should take is to bind
 our user input captured by our `cli::CommandLineArgs` with our three functions defined in this
 module.
 
-In the next section we wil connect those ends inside the `main.rs` file and finish our application.
+In the next section we'll connect those ends inside the `main.rs` file and finish our application.
