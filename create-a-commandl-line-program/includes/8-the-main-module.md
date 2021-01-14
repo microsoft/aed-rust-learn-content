@@ -6,7 +6,7 @@ Now that our program can deal with user interaction (using the `cli` module) and
 We still need to polish some aspects, like using a default journal file and presenting friendly
 errors to our end users, but let's deal with those topics later.
 
-## trying out our program
+## Try out the program
 
 The next thing we should do is connect our `Actions` struct to our three public functions defined in
 the `tasks` module. Open your `main.rs` file and make it look like this:
@@ -56,7 +56,7 @@ users in case of failure.
 
 Let's give it a try. Open your terminal and type the following commands:
 
-```
+```output
 $ cargo run -- -j test-journal.json add "buy milk"
 
 $ cargo run -- -j test-journal.json add "take the dog for a walk"
@@ -75,12 +75,12 @@ $ cargo run -- -j test-journal.json list
 2: water the plants                                   [2021-01-08 16:39]
 ```
 
-It looks like our program is doing really well!
+It looks like our program is running well!
 
 We started by calling `cargo run --` to ensure that all the arguments passed after `--` will be sent
 to our program and not to `cargo` itself.
 
-Then we add three tasks in a row using the subcommand `add` followed by a string with the task name.
+Then we added three tasks in a row using the subcommand `add` followed by a string with the task name.
 The `list` subcommand then showed us all our three tasks in order with their timestamps on the far
 right. Then we called the `done 2` subcommand to mark the second task complete, and, when we called
 `list` again that task was gone. Pretty amazing, don't you think?
