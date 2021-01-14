@@ -1,9 +1,9 @@
-# The `tasks` module
+# Use the `tasks` module
 
 This module will be responsible for representing our tasks, persisting them on disk and
 deserializing them from it.
 
-We first begin defining a simple struct to represent what a to-do item will look like in our
+We begin by defining a simple struct to represent what a to-do item will look like in our
 program:
 
 ```rust
@@ -17,15 +17,15 @@ pub struct Task {
 }
 ```
 
-Our struct only have two fields:
+Our struct has two fields:
 
 -   `text`, for storing the task descriptio, such as `"pay the bills"`, and
 -   `created_at`, that will store the timestamp of the task's creation.
 
-We won't add a `status` or `is_complete` field becaus we will represent our to-do list as a vector
+We won't add a `status` or `is_complete` field because we will represent our to-do list as a vector
 of tasks (`Vec<Task>`), so when a task is complete we can simply remove it from that vector.
 
-You might've noticed that we are using a third party crate, `chrono`, and its `DateTime` struct
+You might've noticed that we're using a third party crate, `chrono`, and its `DateTime` struct
 specialized with the `Utc` parameter. `chrono` is the crate of choice to go for if you need to
 handle date and time data in Rust. It offers a really simple API for us to represent a moment in
 time.
@@ -53,22 +53,21 @@ impl Task {
 The code above defines the `Task::new` function that asks only for the task description, as it will
 will capture the current timestamp for itself using the `Utc::now()` method.
 
-Alright, seems that our task struct is complete. Let's tackle this module's next concern:
-**persistence**.
+Alright, it seems that our task struct is complete. Now let's tackle this module's next item:
+*persistence*.
 
 Since we wil represent our to-do list as a vector of tasks, we could easily use a `JSON` file to
 persist our data. To achieve this, the best course of action is to use another excelent crate from
 the Rust ecosystem, `serde_json`.
 
-# Serializing and Deserializing our Tasks with `serde_json`
+# Serialize and Deserialize our tasks with `serde_json`
 
 Before we continue, we should cover some background of Rust's encoding and decoding good practices.
 
 Whenever we need to persist our structs and enum instances, we touch the topic of **serialization**,
 and when we need to get that data back into our program, we are talking about **deserialization**.
 
-According to
-[OWASP](https://cheatsheetseries.owasp.org/cheatsheets/Deserialization_Cheat_Sheet.html):
+According to [OWASP](https://cheatsheetseries.owasp.org/cheatsheets/Deserialization_Cheat_Sheet.html):
 
 - **Serialization** is the process of turning some object into a data format that can be restored
   later. People often serialize objects in order to save them to storage, or to send as part of
@@ -146,7 +145,7 @@ and implement our file handling functions.
 
 # Interact with the file system
 
-Let us recapitulate the three kinds of actions our program must perform:
+Let us review the three kinds of actions our program must perform:
 
 1.  Add new tasks to a to-do list.
 2.  Remove completed tasks from that list.
