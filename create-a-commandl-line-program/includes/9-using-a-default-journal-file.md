@@ -1,4 +1,4 @@
-# Using a default journal file
+# Use a default journal file
 
 It is common for some command line applications to put their user-owned files *(such as dotfiles and
 cofig files)* in their home directory, so we might place our default journal file there too.
@@ -58,7 +58,7 @@ fn main() {
 We created a new function, called `find_defalut_journal_file` that takes no input arguments and will
 return an `Option<PathBuf>`.
 
-Inside that function we try to build the full path tho our default journal file, by taking an
+Inside that function we try to build the full path to our default journal file, by taking an
 `Option` type from the `home::home_dir` function output and calling its `map` method with an
 anonymous function that pushes the string `".rusty-journal.json"` to the path. If the output of
 `home::home_dir` is `None`, no action is taken, since `map` will only work with a `Some` variant.
@@ -67,6 +67,6 @@ Later, inside our `main` function, we *shadow* our `journal_file` variable to on
 call to `find_default_journal_file` if its original value was a `None`. The `.or_else` method does
 the opposite of the `map` method: it only calls the function it holds if the variant is a `None`.
 
-If neither the user informed a target journal file our `find_default_journal_file` could find a
-suitable file, we will cause our program to panick, since it is impossible for it to do anything
+If neither the user informed a target journal file or `find_default_journal_file` could find a
+suitable file, we will cause our program to panic, since it's impossible for it to do anything
 without a journal file.
