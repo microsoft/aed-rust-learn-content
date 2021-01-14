@@ -1,11 +1,13 @@
-# Displaying friendly error messages
+# Display friendly error messages
 
 Right now, if we try to read from a journal file that doesn't exist, our program will panic with the
 following output:
 
+```output
     $ cargo run -- done 2
 
     thread 'main' panicked at 'Failed to perform action: Os { code: 2, kind: NotFound, message: "No such file or directory" }'
+```
 
 This error is rather verbose to present to our end users, so we should make it more presentable. We
 could write lots of code to handle that, but there is an excellent crate for displaying useful and
@@ -16,7 +18,7 @@ pretty-printing properties and can easlily be converted from another errors, suc
 `std::io::Error`. It is really easy to add `anyhow` to our project, since all we have to do is place
 it as the return type of our `main` function.
 
-But fist, declade it in your `Cargo.toml` file:
+But fist, declare it in your `Cargo.toml` file:
 
 ```toml
 [dependencies]
@@ -79,7 +81,9 @@ those `expect` calls from our code. Also note that we are using the `anyhow!` ma
 Now every panic message caused by an IO error being returned from within our program will we
 displayed to our users like this:
 
+```output
     $ cargo run -- -j missing-journal done 2
     Error: No such file or directory (os error 2)
+```
 
 Which is quite an improvement for a few extra lines of code.
