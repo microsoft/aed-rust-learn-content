@@ -1,11 +1,11 @@
-# The `complete_task` function
+# Use the `complete_task` function
 
 The `complete_task` function is responsible to try to remove a task from our to-do list stored in a
 file. This means that we have to read the file, collect existing tasks *(if any)*, remove the task
 at the informed position *(if there is any)* and write the updated vector of tasks back into the
 file.
 
-A first implementation of the `complete_task` function could look like this, but we can already see
+A first implementation of the `complete_task` function could look like the code below, but we can already see
 signs of code duplication that will require a litte refactoring effort from our part:
 
 ```rust
@@ -47,7 +47,7 @@ have used in the `add_task` function is also required here, and will be required
 implement the `list_tasks` function. This is a good indicator for us to refactor our code and
 encapsulate that behaviour in a dedicated function and reuse it in all of our three actions logic.
 
-## Refactoring `Task` collection
+## Refactor `Task` collection
 
 We can create a `collect_tasks` function that handles all the file parsing for us:
 
@@ -86,7 +86,7 @@ pub fn add_task(journal_path: PathBuf, task: Task) -> Result<()> {
 
 Much better!
 
-## `complete_task` in its final version
+## See `complete_task` in its final version
 
 New we can finally use the refactored code it inside our `complete_task` function.
 
@@ -117,8 +117,8 @@ pub fn complete_task(journal_path: PathBuf, task_position: usize) -> Result<()> 
 The first, second and some of the fourth parts are doing the same as in our `add_task` function,
 with a couple exceptions:
 
-1.  we are not creating the journal file it does not exist.
-2.  we are truncating our file before writing because we are performing a *removal* operation,
+1. We are not creating the journal file it does not exist.
+2. We are truncating our file before writing because we are performing a *removal* operation,
     meaning that the file will be smaller than the original. If we ignored this step our rewinded
     cursor would stop behind the previous written bytes of the file, resulting in a malformed JSON
     file. When we *truncate* the file using the `file.set_len(0)` operation, we ensure that we are
