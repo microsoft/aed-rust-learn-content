@@ -1,4 +1,4 @@
-# The  `cli` module
+# Use the `cli` module
 
 The `cli` module will be responsible for handling user input, which will be via a command line
 interface *(hence the name)*. To add it to our project, we must create a `src/cli.rs` file inside
@@ -10,7 +10,7 @@ mod cli;
 
 Our new module currently doesn't contain any code, but let's change that.
 
-## Handling command line parameters with `structopt`
+## Handle command line parameters with `structopt`
 
 Parsing and handling command line arguments can be done using Rust's standard library, but it would
 require a tremendous amount of code and effort to do it reasonably well, so we'll resort to a third
@@ -33,7 +33,7 @@ structopt = "0.3"
 
 From now on, we can refer to it directly from any part of our code.
 
-## Creating our `CommandLineArgs` struct
+## Create the `CommandLineArgs` struct
 
 The next step we must take is to create a struct to represent all the possible actions our program
 can perform.
@@ -59,16 +59,15 @@ pub struct CommandLineArgs {
     pub action: Action,
     pub journal_file: Option<PathBuf>,
 }
-
 ```
 
 The `Action` enum has one variant for each kind of action we'll need in our program:
 
--`Action::Add` holds a `String` describing the task being added, like `"buy milk"` or `"take the dog
+- `Action::Add` holds a `String` describing the task being added, like `"buy milk"` or `"take the dog
   on a walk"`.
--`Action::Done` holds the number of the task we will mark as done, so a `2` will cross out the
+- `Action::Done` holds the number of the task we will mark as done, so a `2` will cross out the
   second task in our numbered to-do list.
--`Action::List` will be used to print the task list in the terminal.
+- `Action::List` will be used to print the task list in the terminal.
 
 Next, our `CommandLineArgs` struct will hold our `Action` enum as a wrapper, along with an optional
 argument *(mind the `Option` type)* named `journal_file`, for when the user wants to point a journal
@@ -77,7 +76,7 @@ file other than the default.
 Wrapping the `action` and the `journal_file` types together allows us to apply the `journal_file`
 optional argument to all nested subcommands declared in the `Action` enum.
 
-## Deriving StructOpt
+## Derive StructOpt
 
 But those types won't be of any use until we annotate them the `structopt` attributes. The final
 source code will be like this:
@@ -123,9 +122,9 @@ In the final version of our `cli.rs` file we'd used the `#[derive(StructOpt)]` a
 `CommandLineArgs` struct. The documentation strings (`///`) will also be used to provide helpful
 descriptions for each aspect of our command line interface.
 
-## Trying Out our CLI
+## Try out our CLI
 
-Lets take our program for a test drive. But firest, modify the `main.rs` source file to look like
+It's about time to take our program for a test drive. But first, modify the `main.rs` source file to look like
 this:
 
 ```rust
@@ -140,6 +139,7 @@ fn main() {
 When you hit the `cargo run` command you will be greeted by the help message that `structopt`
 generated from our `CommandLineArgs` struct. Impressive, isn't it?
 
+```
     $ cargo run
         Finished dev [unoptimized + debuginfo] target(s) in 0.04s
          Running `target/debug/rusty-journal`
@@ -161,11 +161,12 @@ generated from our `CommandLineArgs` struct. Impressive, isn't it?
         add     Write tasks to the journal file
         done    Remove an entry from the journal file by position
         help    Prints this message or the help of the given subcommand(s)
-        list    List all tasks in the journal file
+        list    List all tasks in the journal file	
+```
 
 It even produces errors when subcommands are called with the wrong arguments. Give it a try!
 
-## Using the parsed results
+## Use the parsed results
 
 The whole point of using `structopt` as our argument parser is that every valid invocation of our
 command line interface will produce a `CommandLineArgs` value that we can use within our program to
