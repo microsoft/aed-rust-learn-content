@@ -6,6 +6,9 @@ Our application will be a command-line to-do tracker that records our
 tasks into a text file, display them as a list in the terminal and
 lets us mark them complete.
 
+## Learning objectives
+- Learn how to develop a real-world command-line program using battle-tested third party crates for command line parsing and error handling 
+
 ## Prerequisites
 
 We will require all the knowledge we have gathered so far, so don't
