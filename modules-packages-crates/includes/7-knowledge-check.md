@@ -17,7 +17,7 @@ Each of the following, if true, describe **third party modules** in Rust, EXCEPT
 - Dependencies can be fetched and compiled by Cargo.
   - Incorrect. This statement is true.
 - Third party crates and their intended versions should be declared in the `src/main.rs` file.
-  - Correct. Third party crates should be decalared in the `Cargo.toml` file.
+  - Correct. Third party crates should be declared in the `Cargo.toml` file.
 - Dependencies are normally fetched from the Crates.io repository.
   - Incorrect. This statement is true.
 - Only public items can be accessed from third party crates.

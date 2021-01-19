@@ -1,13 +1,13 @@
 # Exercise - Visibility
 
-Unless otherwise noted, every path in rust is private.
+Unless explicitly noted, every item in a module is private. Only the public items of a module can be accessed from outside the module scope.
 
-Your assignment in this exercise is to make the following code compile without modifying the `main` function.
+The code below has a compiler error. Your assignment in this exercise is to make the code compile successfully without modifying the `main` function.
 
 ```rust
 mod car_factory {
     fn build_car() {
-	println!("Honk honk!");
+        println!("Honk honk!");
     }
 }
 
@@ -16,7 +16,7 @@ fn main() {
 }
 ```
 
-Hint: The compiler error should point to the thing that needs to be public.
+Hint: The compiler error should point to the item that needs to be public.
 
 You can also view this exercise at this [Rust Playground link](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=fe45044ec8efe9344f5ed81c7fa3ad06).
 

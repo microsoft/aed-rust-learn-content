@@ -1,12 +1,17 @@
-# Understand Concepts Behind Code Organization
+# Understand concepts behind code organization
 
 Before we start, it is important to explain the concepts behind code organization in Rust programs:
 
-- A **package** is one or more **crates** that provide a set of functionality. A **package** contains a `Cargo.toml` file that describes how to build those **crates**.
-- A **crate** is a compilation unit, which is the smallest amount of code that the Rust compiler can operate on. Once compiled, it will produce either an executable or a library.
-- A **crate** contains an implicit, un-named top-level **module**.
-- A **module** is a *(possibly nested)* unit of code organization inside a **crate**.
-- Recursive definitions can span **modules**, but not **crates**.
+- A *package**:
+  - Is one or more **crates** that provide a set of functionality.
+  - Contains a `Cargo.toml` file that describes how to build those **crates**.
+- A **crate**:
+  - Is a compilation unit, which is the smallest amount of code that the Rust compiler can operate on.
+  - Once compiled, produces either an executable or a library.
+  - Contains an implicit, un-named top-level **module**.
+- A **module**:
+  - Is a *(possibly nested)* unit of code organization inside a **crate**.
+  - Can have recursive definitions that span additional modules.
 
 ## Package
 
@@ -35,7 +40,7 @@ project are also, each, a single crate.
 
 ## Library Crates
 
-We've already covered how to create a binary program, and creating a library is just as easy. To create a library, pass the `--lib` command line parateter to the `cargo new` command:
+We've already covered how to create a binary program, and creating a library is just as easy. To create a library, pass the `--lib` command line parameter to the `cargo new` command:
 
     $ cargo new --lib my-library
          Created library `my-library` package
@@ -47,7 +52,7 @@ You can see that, instead of a `src/main.rs` file, you now get a =src/lib.rs' fi
     │  └── lib.rs
     └── Cargo.toml
 
-When you tell Cargo to complie this crate, you'll get a library file called `libmy_library.rlib` that can be published and linked to other projects.
+When you tell Cargo to compile this crate, you'll get a library file called `libmy_library.rlib` that can be published and linked to other projects.
 
 ## Modules
 
@@ -83,7 +88,7 @@ If a source file has `mod` declarations in it, then the contents of the module f
 
 You might've noticed the `pub` keyword at the beginning of the function definitions in the `math` module.
 
-To control whether items can be used across modules, the Rust compiler perform checks to see whether they should be allowed or not. By default, everything in Rust is private and can only beaccessed by the current module and its descendants. In contrast, when an item is declared as `pub`, it can be thought of as being accessible to the outside world. For example:
+To control whether items can be used across modules, the Rust compiler perform checks to see whether they should be allowed or not. By default, everything in Rust is private and can only be accessed by the current module and its descendants. In contrast, when an item is declared as `pub`, it can be thought of as being accessible to the outside world. For example:
 
 ```rust
 // Declare a private struct
