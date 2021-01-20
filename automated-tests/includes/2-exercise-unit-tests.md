@@ -1,7 +1,6 @@
-# Exercise - Writing Unit Tests
+# Exercise - Write unit tests
 
-In this exercise you'll be prompted to write two test functions for the `is_even` function, until
-the code compiles and both tests passes. You should edit only the body of the two test functons.
+In this exercise you'll write two test functions for the `is_even` function. You'll know the exercise is complete once the code compiles and both tests passes. You should edit only the body of the two test functions.
 
 ```rust
 pub fn is_even(num: i32) -> bool {
@@ -14,12 +13,12 @@ mod tests {
 
     #[test]
     fn is_true_when_even() {
-	assert!();
+        assert!();
     }
 
     #[test]
     fn is_false_when_odd() {
-	assert!();
+        assert!();
     }
 }
 ```

@@ -1,12 +1,15 @@
-# Exercise - Write Documentation Tests
+# Exercise - Write documentation tests
 
-In this exercise you'll be asked to create the following documentation tests in this code sinppet:
+In this exercise you'll create documentation tests in the code snippet below for the functions `div` and `sub`.
 
-- `div` function:
+For the `div` function write the following doctests:
+
   1. assert that `10` divided by `2` equals `5`
   2. assert that `6` divided by `3` equals `2`
   3. assert that `10` divided by `0` panics
-- `sub` function:
+
+For the `sub` function write the following doctests:
+
   1. assert that `9` subtracted by `2` equals `7`
   2. assert that `6` subtracted by `9` equals `-3`
 
@@ -36,7 +39,7 @@ In this exercise you'll be asked to create the following documentation tests in 
 /// ```
 pub fn div(a: i32, b: i32) -> i32 {
     if b == 0 {
-	panic!("Divide-by-zero error");
+        panic!("Divide-by-zero error");
     }
     a / b
 }
@@ -59,17 +62,14 @@ pub fn sub(a: i32, b: i32) -> i32 {
 }
 ```
 
-Remember to create the project in your computer first, as documentation tests are only available for
-library crates. You can use the following command to accomplish this:
+Remember to create the project in your computer first, as documentation tests are only available for library crates. You can run the following commands in your terminal to accomplish this:
 
 ```sh
 $ cargo new --lib doctests_exercise
 $ cd doctests_exercise
 ```
 
-Keep in mind that the name of the crate must prefix the name of the function, as it is already
-filled in for the first assiginment of this exercise.
+Keep in mind that the name of the crate must prefix the name of the function, as it is already filled in for the first assignment of this exercise.
 
 To find a complete version of this exercise, visit this [Rust Playground
-link](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=e53758e499766ca348ee8d52724d583b)
-.
+link](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=e53758e499766ca348ee8d52724d583b).

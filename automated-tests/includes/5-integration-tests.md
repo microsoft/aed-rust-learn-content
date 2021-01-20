@@ -1,12 +1,12 @@
-# Integration Tests
+# Write integration tests
 
-While unit and documentation tests provide conciseness and specific tests, it is generally a good idea to test our crate as a whole, to test that many parts of our code work correctly together.
+While unit and documentation tests provide concise and specific tests, it is generally a good idea to test our crate as a whole, confirming that many parts of our code work correctly together.
 
-Rust test suite can also handle *integration tests* so that we can test our library in the same way any other code would, meaning we can only call functions that are part of our library’s public API.
+The Rust test suite also has *integration tests* so that we can test our library in the same way any other code would, meaning we can only call functions that are part of our library’s public API.
 
-Cargo looks for integration tests in *tests* directory (next to the *src* folder) and will run each source file in it.
+Cargo looks for integration tests in the *tests* directory (next to the *src* directory) and will run each source file in it.
 
-Lets try out how to write integration tests by creating a new small project. Run the following commands in your terminal:
+Lets now write some integration tests by creating a new small project. Run the following commands in your terminal:
 
 ```sh
 $ cargo new --lib rusty_pizza
@@ -23,23 +23,23 @@ pub struct Pizza {
 
 impl Pizza {
     pub fn pepperoni(inches: u8) -> Self {
-	Pizza::bake("pepperoni", inches)
+        Pizza::bake("pepperoni", inches)
     }
 
     pub fn mozzarella(inches: u8) -> Self {
-	Pizza::bake("mozzarella", inches)
+        Pizza::bake("mozzarella", inches)
     }
 
     fn bake(topping: &str, inches: u8) -> Self {
-	Pizza {
-	    topping: String::from(topping),
-	    inches,
-	}
+        Pizza {
+            topping: String::from(topping),
+            inches,
+        }
     }
 }
 ```
 
-The snippet above features a `Pizza` struct with two public methods, `Pizza::pepperoni` and `Pizza::mozzarella`, that rely in the private method `Piza::bake` to prepare our pizzas.
+The snippet above features a `Pizza` struct with two public methods, `Pizza::pepperoni` and `Pizza::mozzarella`, that rely in the private method `Pizza::bake` to prepare our pizzas.
 
 Create a new directory named `tests` alongside the `src` directory and place a new file called `pizzas.rs` in it, with the following contents:
 

@@ -1,0 +1,32 @@
+### YamlMime:Module
+uid: ""
+metadata:
+  title: Write automated tests
+  description: "Learn about the types of testing you can do with Rust."
+  ms.date: 
+  author: meaghanlewis
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Write automated tests
+summary: "Learn about the types of testing you can do with Rust."
+abstract:  |
+  In this module, you'll learn:
+  - How to write unit tests
+  - How to write integration tests
+  - How to write documentation tests
+prerequisites: | 
+  - Have your Rust development environment set up.
+  - Know how to create, edit, and run Rust code by using Cargo.
+iconUrl: /learn/achievements/generic-badge.svg # TODO change
+levels:
+- beginner
+roles:
+- developer
+- student
+products:
+- ""
+units:
+- ""
+badge:
+  uid: ""

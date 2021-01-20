@@ -1,7 +1,6 @@
-# Documention Tests
+# Write documentation tests
 
 The primary way of documenting a Rust library is through annotating the source code with triple forward slashes *(///)*, known as *documentation comments*.
-
 Documentation comments are written in markdown and support code blocks in them, so these code blocks are compiled and used as tests.
 
 To try out this feature, you'll need to create a new library project first.
@@ -46,3 +45,5 @@ test src/lib.rs - add (line 6) ... ok
 
 test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out
 ```
+
+Notice that output indicates that there are 0 unit tests and 1 integration test.
