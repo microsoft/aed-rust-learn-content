@@ -1,10 +1,10 @@
 # Write integration tests
 
-While unit and documentation tests provide concise and specific tests, it is generally a good idea to test our crate as a whole, confirming that many parts of our code work correctly together.
+While unit and documentation tests provide concise and specific tests, it is generally a good idea to test our crate as a whole, confirming that the many parts of our code work correctly together.
 
 The Rust test suite also has *integration tests* so that we can test our library in the same way any other code would, meaning we can only call functions that are part of our library’s public API.
 
-Cargo looks for integration tests in the *tests* directory (next to the *src* directory) and will run each source file in it.
+What's unique about these tests is that they exist in a separate directory and file, so they can externally test the library code. Cargo looks for integration tests in the *tests* directory (next to the *src* directory) and will run each source file in it.
 
 Lets now write some integration tests by creating a new small project. Run the following commands in your terminal:
 
@@ -41,7 +41,7 @@ impl Pizza {
 
 The snippet above features a `Pizza` struct with two public methods, `Pizza::pepperoni` and `Pizza::mozzarella`, that rely in the private method `Pizza::bake` to prepare our pizzas.
 
-Create a new directory named `tests` alongside the `src` directory and place a new file called `pizzas.rs` in it, with the following contents:
+Create a new directory named `tests` alongside the `src` directory and place a new file named `pizzas.rs` in it, with the following contents:
 
 ```rust
 use rusty_pizza::Pizza;

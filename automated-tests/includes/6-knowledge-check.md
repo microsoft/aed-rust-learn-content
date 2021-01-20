@@ -4,10 +4,10 @@
 
 - This function should not be executed during tests.
   - Incorrect. The `$[ignore]` attribute, which disables a test function during test execution, is
-        not applied to this funcion.
+        not applied to this function.
 - This function should panic during tests.
   - Incorrect. The `$[should_panic]` attribute, which indicates a test should generate a panic, is
-        not applied to this funcion.
+        not applied to this function.
 - This function should execute without any panic.
   - Correct.
 
