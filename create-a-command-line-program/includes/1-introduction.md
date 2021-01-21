@@ -2,12 +2,13 @@
 
 In this final module, we'll develop a modern, real-world Rust program.
 
-Our application will be a command-line to-do tracker that records our
-tasks into a text file, display them as a list in the terminal and
-lets us mark them complete.
+Our application will be a command-line to-do tracker that records our tasks into a text file, display them as a list in the terminal and lets us mark them complete.
 
 ## Learning objectives
-- Learn how to develop a real-world command-line program using battle-tested third party crates for command line parsing and error handling 
+
+In this module you'll:
+
+- Learn how to develop a real-world command-line program using battle-tested third party crates for command line parsing and error handling
 
 ## Prerequisites
 

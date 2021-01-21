@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: 
+metadata:
+  title: Implement the function to complete tasks
+  description: Write the function body to complete tasks.
+  author: meaghanlewis
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Implement the function to complete tasks
+durationInMinutes: 6
+content: |
+  [!include[](includes/6-complete-task-function.md)]

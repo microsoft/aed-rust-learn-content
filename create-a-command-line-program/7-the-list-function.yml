@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: 
+metadata:
+  title: Implement the function to print out all tasks
+  description: Write the function body to print out tasks in a formatted output.
+  author: meaghanlewis
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Implement the function to print out all tasks
+durationInMinutes: 4
+content: |
+  [!include[](includes/7-list-task-function.md)]

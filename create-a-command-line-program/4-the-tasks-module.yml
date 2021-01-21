@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: 
+metadata:
+  title: Create the tasks module
+  description: Implement the module that create and store tasks.
+  author: meaghanlewis
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Create the tasks module
+durationInMinutes: 7
+content: |
+  [!include[](includes/3-the-tasks-module.md)]

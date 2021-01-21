@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: 
+metadata:
+  title: Create the cli module
+  description: Implement the module that will parse command line input.
+  ms.date: 
+  author: meaghanlewis
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Create the cli module
+durationInMinutes: 7
+content: |
+  [!include[](includes/3-the-cli-module.md)]

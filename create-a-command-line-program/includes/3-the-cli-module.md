@@ -1,7 +1,7 @@
-# Use the `cli` module
+# Create the cli module
 
 The `cli` module will be responsible for handling user input, which will be via a command line
-interface *(hence the name)*. To add it to our project, we must create a `src/cli.rs` file inside
+interface *(hence the name)*. To add it to our project, we must create a file named `src/cli.rs` inside
 our project root and add the following line to our `main.rs` file:
 
 ```rust
@@ -14,14 +14,16 @@ Our new module currently doesn't contain any code, but let's change that.
 
 Parsing and handling command line arguments can be done using Rust's standard library, but it would
 require a tremendous amount of code and effort to do it reasonably well, so we'll resort to a third
-party crate called `structopt` that will make this chore easy as defining a simple struct.
+party crate called [`structopt`](https://crates.io/crates/structopt) that will make this chore easy as defining a simple struct.
 
 By running the command `cargo search structopt` we can find if it is available and which is its most
 recent version:
 
-    $ cargo search structopt
-    structopt = "0.3.21"                  # Parse command line argument by defining a struct.
-    ...
+```sh
+$ cargo search structopt
+structopt = "0.3.21"                  # Parse command line argument by defining a struct.
+...
+```
 
 Let's use it as a dependency to our project by adding the following entry to the `[dependencies]`
 section of our `Cargo.toml` file:
@@ -36,12 +38,13 @@ From now on, we can refer to it directly from any part of our code.
 ## Create the `CommandLineArgs` struct
 
 The next step we must take is to create a struct to represent all the possible actions our program
-can perform.
+can perform. In previous sections, we've defined that those actions should be:
 
-In previous sections, we've defined that those actions should be: **add** a task, **remove** a task
-and **print** the task list. After thoughtfuly reading the [`structopt` README page]() we can tell
-that the best way to express those alternating options is to use an `enum` to hold all those three
-actions.
+- **add** a task
+- **remove** a task
+- **print** the task list
+
+After thoughtfully reading the [`structopt` README page](https://github.com/TeXitoi/structopt) we can tell that the best way to express those alternating options is to use an `enum` to hold all those three actions.
 
 Before we actually use `structopt`, let us first look at our types that will represent our command
 line arguments:
@@ -89,14 +92,14 @@ use structopt::StructOpt;
 pub enum Action {
     /// Write tasks to the journal file
     Add {
-	/// The task description text
-	#[structopt()]
-	text: String,
+        /// The task description text
+        #[structopt()]
+        text: String,
     },
     /// Remove an entry from the journal file by position
     Done {
-	#[structopt()]
-	position: usize,
+        #[structopt()]
+        position: usize,
     },
     /// List all tasks in the journal file
     List,
@@ -139,7 +142,7 @@ fn main() {
 When you hit the `cargo run` command you will be greeted by the help message that `structopt`
 generated from our `CommandLineArgs` struct. Impressive, isn't it?
 
-```
+```output
     $ cargo run
         Finished dev [unoptimized + debuginfo] target(s) in 0.04s
          Running `target/debug/rusty-journal`
@@ -161,7 +164,7 @@ generated from our `CommandLineArgs` struct. Impressive, isn't it?
         add     Write tasks to the journal file
         done    Remove an entry from the journal file by position
         help    Prints this message or the help of the given subcommand(s)
-        list    List all tasks in the journal file	
+        list    List all tasks in the journal file
 ```
 
 It even produces errors when subcommands are called with the wrong arguments. Give it a try!
@@ -170,7 +173,7 @@ It even produces errors when subcommands are called with the wrong arguments. Gi
 
 The whole point of using `structopt` as our argument parser is that every valid invocation of our
 command line interface will produce a `CommandLineArgs` value that we can use within our program to
-invoke the specific behaviour our user wants.
+invoke the specific behavior our user wants.
 
 Take a quick look at how some different usages of our app result in different values for our struct.
 First, modify our `main.rs` file to print the result of the `from_args()` and then try to call our
@@ -191,7 +194,7 @@ Note how each different invocation instantiates a different value for our struct
 // $ cargo run -- add "buy milk"
 CommandLineArgs {
     action: Add {
-	text: "buy milk",
+        text: "buy milk",
     },
     journal_file: None,
 }
@@ -199,7 +202,7 @@ CommandLineArgs {
 // $ cargo run -- done 4
 CommandLineArgs {
     action: Done {
-	position: 4,
+        position: 4,
     },
     journal_file: None,
 }
@@ -208,7 +211,7 @@ CommandLineArgs {
 CommandLineArgs {
     action: List,
     journal_file: Some(
-	"groceries.txt",
+        "groceries.txt",
     ),
 }
 ```

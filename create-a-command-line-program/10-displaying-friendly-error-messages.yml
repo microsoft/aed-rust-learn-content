@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: 
+metadata:
+  title: Display friendly error messages
+  description: Place tasks in a default journal file.
+  author: meaghanlewis
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Display friendly error messages
+durationInMinutes: 4
+content: |
+  [!include[](includes/10-displaying-friendly-error-messages.md)]
