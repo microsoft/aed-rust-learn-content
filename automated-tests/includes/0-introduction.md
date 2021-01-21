@@ -13,5 +13,7 @@ In this module, you'll learn:
 
 ## Prerequisites
 
-For this learning module you'll need a development environment already set up. If you need to review
-how to acheive that you can take a look at our first learning module: "Get started with Rust".
+- Have your Rust development environment set up.
+- Know how to create, edit, and run Rust code by using Cargo.
+- Know how to create functions.
+- Understand how control flow, specifically `if` statements work in Rust.

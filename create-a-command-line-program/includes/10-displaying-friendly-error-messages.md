@@ -11,7 +11,7 @@ Right now, if we try to read from a journal file that doesn't exist, our program
 This error is rather verbose to present to our end users, so we should make it more presentable. We could write lots of code to handle that, but there is an excellent crate for displaying useful and pretty errors to end users, called `anyhow`.
 
 The logic behind the `anyhow` crate is that it gives us its own error type, which has
-pretty-printing properties and can easlily be converted from another errors, such as
+pretty-printing properties and can easily be converted from another errors, such as
 `std::io::Error`. It is really easy to add `anyhow` to our project, since all we have to do is place it as the return type of our `main` function.
 
 But fist, declare it in your `Cargo.toml` file:

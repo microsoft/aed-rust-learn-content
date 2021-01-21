@@ -6,15 +6,15 @@ Our application will be a command-line to-do tracker that records our tasks into
 
 ## Learning objectives
 
-In this module you'll:
+In this module you'll learn:
 
-- Learn how to develop a real-world command-line program using battle-tested third party crates for command line parsing and error handling
+- How to develop a real-world command-line program using battle-tested third party crates for command line parsing and error handling
 
 ## Prerequisites
 
-We will require all the knowledge we have gathered so far, so don't
-hesitate to review past units as we move along.
-
-Also, since our command line app will require the use of multiple
-files and in user interaction from the terminal, *Rust Playground* can
-not be used this time.
+- Have your Rust development environment set up.
+- Know how to create, edit, and run Rust code by using Cargo.
+- Know how to split code into multiple modules.
+- Be familiar with using third-party crates.
+- Understand common concepts including variables, data types and functions.
+- Have an understanding of generic data types.

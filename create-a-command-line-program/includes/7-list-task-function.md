@@ -7,10 +7,10 @@ the journal file and print the list of tasks, if any.
 pub fn list_tasks(journal_path: PathBuf) -> Result<()> {
     // Open the file
     let file = OpenOptions::new().read(true).open(journal_path)?;
-    // 2. parse the file and collect our tasks
+    // Parse the file and collect our tasks
     let tasks = collect_tasks(&file)?;
 
-    // 3. enumerate and display tasks, if any
+    // Enumerate and display tasks, if any
     if tasks.is_empty() {
         println!("Task list is empty!");
     } else {
