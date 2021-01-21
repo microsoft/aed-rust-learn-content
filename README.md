@@ -21,9 +21,9 @@ This repo contains all of the development of Rust lang content for Learn. Once c
 | Module 6 content | @tilacog + @meaghanlewis | Complete | 12/31/2020 |
 | Module 6 content to Aquent | @shanama | Complete| 1/12/2021 |
 | Module 7 content | @tilacog + @meaghanlewis | Complete | 1/7/2021  |
-| Module 7 content to Aquent | @shanama | Not Started | 1/19/2021 |
+| Module 7 content to Aquent | @shanama | Not Started | 1/22/2021 |
 | Module 8 content | @tilacog + @meaghanlewis | Complete |1/14/2021  |
-| Module 8 content to Aquent | @shanama | Not Started | 1/26/2021 |
+| Module 8 content to Aquent | @shanama | Not Started | 1/22/2021 |
 | Review Content | @meaghanlewis | Not Started | < DATE > |
 | Review Content | < YOUR REVIEWER(S) NAME(S) > | < Date > | < DATE > |
 | Content Draft on Learn | Aquent | Not Started | < DATE > |
@@ -45,7 +45,7 @@ This repo contains all of the development of Rust lang content for Learn. Once c
 | Module | Implement generic types and traits | Understand what generic types and traits are and how to use them in Rust. | 45 min |
 | Module | Explore modules, packages and third-party crates | Learn about how to effectively use modules and how to integrate with packages and third-party crates | 15-45 min |
 | Module | Write automated tests | Learn about the types of testing you can do with Rust. | 45 min |
-| Module | Create a command line program | Combine what you've learned to write and test a command line program. | 45 min |
+| Module | Build a command line to-do list program | Create a command-line program to manage to-do list items from scratch. | 45 min |
 
 ## Contributing
 
