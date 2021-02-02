@@ -2,13 +2,13 @@
 uid: 
 metadata:
   title: Using iterators
-  description: 
+  description: Learn how to use iterators.
   ms.date: 
   author: meaghanlewis
   ms.author: shanama
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Using iterators
-durationInMinutes: 1
+durationInMinutes: 4
 content: |
   [!include[](includes/5-iterators.md)]

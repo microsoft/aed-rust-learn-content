@@ -9,6 +9,6 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Exercise - Implement an Iterator
-durationInMinutes: 1
+durationInMinutes: 8
 content: |
   [!include[](includes/7-exercise-implement-an-iterator.md)]
