@@ -70,7 +70,7 @@ fn main() {
     let magic1 = String::from("abracadabra!");
     let magic2 = String::from("shazam!");
 
-    let result = longest_word(magic1, magic2);
+    let result = longest_word(&magic1, &magic2);
     println!("The longest magic word is {}", result);
 }
 
@@ -131,7 +131,7 @@ fn main() {
     let result;
     {
         let magic2 = String::from("shazam!");
-        result = longest_word(magic1, magic2);
+        result = longest_word(&magic1, &magic2);
     }
     println!("The longest magic word is {}", result);
 }
