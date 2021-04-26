@@ -17,6 +17,7 @@ mod authentication {
                 username: username.to_string(),
                 password_hash: hash_password(password),
             }
+        }
     }
     fn hash_password(input: &str) -> u64 { /*...*/ }
 }
